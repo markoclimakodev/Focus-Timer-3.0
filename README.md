@@ -10,7 +10,7 @@
  &nbsp;
  <a href="#technologies">🛠Technologies</a> • 
  &nbsp;
- <a href="#author">Author</a>
+ <a href="#author">Author</a> •
 </p>
 
 <section align="center">
