@@ -3,9 +3,13 @@
 
 <p >
  <a href="#description">Description</a> •
+ &nbsp;
  <a href="#themes">Themes</a> • 
+ &nbsp;
  <a href="#features">Features</a> •
+ &nbsp;
  <a href="#technologies">🛠Technologies</a> • 
+ &nbsp;
  <a href="#author">Author</a>
 </p>
 
