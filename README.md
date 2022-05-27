@@ -17,7 +17,10 @@
     <h2 id="description">Description</h2>
 </section>
 <br>
-
+<section align="center">
+    <h2 id="features">Features</h2>
+</section>
+ <br>
 <section align="center">
   <h2 id="themes">🎨Themes </h2>
   <br>
