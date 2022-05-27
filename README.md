@@ -1,5 +1,5 @@
 <div align="center">
-<h1> Focus-Timer-3.0 </h1>
+<h1> Focus Timer 3.0 </h1>
 
 <p >
  <a href="#description">Description</a> •
