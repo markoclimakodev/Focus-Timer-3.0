@@ -35,13 +35,47 @@
     <main>
       <section class="aplication-tabs">
         <div class="main-tabs">
-          <span class="tabs"> Pomodoro </span>
-          <span class="tabs">Tarefas</span>
+          <span class="pomodoro selected tabs"> Pomodoro </span>
+          <span class="to-do tabs">Tarefas</span>
         </div>
         <span class="tabs"> Sight one </span>
       </section>
 
-      <section class="main-content"></section>
+      <section class="main-content">
+        <section class="timer">
+          <p class="counter"><strong>25</strong>:<strong>00</strong></p>
+
+          <section class="time-bar">
+            <div class="fill"></div>
+          </section>
+
+          <section class="controls-container">
+             <section class="session containers">
+              <p>SESSÂO</p>
+              <p class="number-of-seesion"><strong>1</strong>/<strong>4</strong></p>
+             </section>
+             <section class="duration containers">
+              <p>TEMPO SESSÂO</p>
+              <section class="session-options">
+                <img src="src/images/buttons/25.svg" alt="">
+                <img src="src/images/buttons/45.svg" alt="">
+                <img src="src/images/buttons/60.svg" alt="">
+              </section>
+             </section>
+
+             <section class="timer-controls containers">
+              <p>CONTROLES</p>
+              <section class="session-options">
+                <img src="src/images/buttons/play.svg" alt="">
+                <img src="src/images/buttons/stop.svg" alt="">
+              </section>
+             </section>
+
+          </section>
+
+        </section>
+        <section class="sounds"></section>
+      </section>
     </main>
 
     <script src="script.js"></script>
