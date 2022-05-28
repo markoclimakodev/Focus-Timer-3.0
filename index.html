@@ -29,21 +29,21 @@
           class="darkmode"
         />
       </div>
-      <img src="src/images/buttons/lightmodeswitch.svg" alt="" class="switch" />
+      <img src="src/images/buttons/lightmodeswitch.svg" alt="" class="switch btn" />
     </div>
 
     <main>
       <section class="aplication-tabs">
         <div class="main-tabs">
-          <span class="pomodoro selected tabs"> Pomodoro </span>
-          <span class="to-do tabs">Tarefas</span>
+          <span class="pomodoro selected tabs btn"> Pomodoro </span>
+          <span class="to-do tabs btn">Tarefas</span>
         </div>
-        <span class="tabs"> Sight one </span>
+        <span class="tabs btn"> Sight one </span>
       </section>
 
       <section class="main-content">
         <section class="timer">
-          <p class="counter"><strong>25</strong>:<strong>00</strong></p>
+          <p class="counter"><strong class="minutes">25</strong>:<strong class="seconds">00</strong></p>
 
           <section class="time-bar">
             <div class="fill"></div>
@@ -52,29 +52,51 @@
           <section class="controls-container">
              <section class="session containers">
               <p>SESSÂO</p>
-              <p class="number-of-seesion"><strong>1</strong>/<strong>4</strong></p>
+              <p class="number-of-seesion btn"><strong class="current-session">1</strong>/<strong class="total-session">4</strong></p>
              </section>
              <section class="duration containers">
               <p>TEMPO SESSÂO</p>
               <section class="session-options">
-                <img src="src/images/buttons/25.svg" alt="">
-                <img src="src/images/buttons/45.svg" alt="">
-                <img src="src/images/buttons/60.svg" alt="">
+                <img class="t25 btn" src="src/images/buttons/25.svg" alt="">
+                <img class="t45 btn selected" src="src/images/buttons/45.svg" alt="">
+                <img class="t60 btn" src="src/images/buttons/60.svg" alt="">
               </section>
              </section>
 
              <section class="timer-controls containers">
               <p>CONTROLES</p>
               <section class="session-options">
-                <img src="src/images/buttons/play.svg" alt="">
-                <img src="src/images/buttons/stop.svg" alt="">
+                <img class="btn" src="src/images/buttons/play.svg" alt="">
+                <img class="btn" src="src/images/buttons/stop.svg" alt="">
               </section>
              </section>
 
           </section>
 
         </section>
-        <section class="sounds"></section>
+
+        <section class="sounds">
+          <section class="cards btn tree">
+            <img src="src/images/buttons/tree.svg" alt="">
+          <label for="tree-volume"></label>
+          <input type="range" name="tree" id="tree-volume">
+          </section>
+          <section class="cards btn rain">
+            <img src="src/images/buttons/rain.svg" alt="">
+          <label for="rain-volume"></label>
+          <input type="range" name="rain" id="rain-volume">
+          </section>
+          <section class="cards btn coffeshop">
+            <img src="src/images/buttons/coffeshop.svg" alt="">
+          <label for="coffeshop-volume"></label>
+          <input type="range" name="coffeshop" id="coffeshop-volume">
+          </section>
+          <section class="cards btn fire">
+            <img src="src/images/buttons/fire.svg" alt="">
+          <label for="fire-volume"></label>
+          <input type="range" name="fire" id="fire-volume">
+          </section>
+        </section>
       </section>
     </main>
 
