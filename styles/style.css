@@ -92,9 +92,118 @@ main {
   height: 3.4rem;
   background: var(--main-lightmode-bg);
 
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
- border-radius: 8px 8px 0px 0px;;
+  border-radius: 8px 8px 0px 0px;
+
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--button-lightmode-color);
+}
+
+.pomodoro.selected,
+.to-do.selected {
+  border-top: 1rem solid rgba(34, 79, 238, 0.75);
+}
+
+.main-content {
+  background: var(--main-lightmode-bg);
+  width: 100%;
+  height: 54.9rem;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 0px 0px 8px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 45.8rem;
+  height: 31.5rem;
+
+}
+
+.counter {
+  font-size: 15rem;
+  color: var(--button-lightmode-color);
+
+  padding: 0;
+}
+
+.time-bar {
+  width: 41.5rem;
+  height: 2.1rem;
+  border: 0.4rem solid hsla(0, 6%, 53%, 0.4);
+
+  background: hsla(0, 11%, 91%, 0.75);
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.fill {
+  width: 100%;
+  height: 1.2rem;
+  border-radius: 8px 8px 8px 8px;
+  /* animation: counter-status 6s linear infinite; */
+  background-color: #224fee;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+
+  width: 100%;
+}
+
+.controls-container p {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  text-align: center;
+  color: var(--button-lightmode-color);
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.session-options {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.session {
+
+}
+
+.session .number-of-seesion {
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.duration {
+
+}
+
+
+.timer-controls {
 }
