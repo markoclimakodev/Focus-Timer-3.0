@@ -1,0 +1,21 @@
+:root {
+  font-size: 62.5%;
+
+  --main-lightmode-bg: hsla(0, 0%, 97%, 0.75);
+  --button-lightmode-color: hsla(248, 2%, 20%, 1);
+  --button-lightmode-icon-selected: hsla(240, 31%, 98%, 1);
+
+  --button-color-selected: hsla(227, 86%, 53%, 1);
+  --cards-color-bg-selected: hsla(227, 85%, 53%, 0.75);
+  --cards-color-bg: hsla(0, 6%, 53%, 0.4);
+
+  --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
+  --button-darkmode-color: hsla(216, 10%, 90%, 1);
+  --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
