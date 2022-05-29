@@ -13,7 +13,7 @@
   --button-darkmode-color: hsla(216, 10%, 90%, 1);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
 
-  transition: all 750ms ease-in;
+  transition: all 1s ease;
 }
 
 * {
@@ -31,6 +31,7 @@ body {
 
   background-image: url('../src/images/themes/lightmode/1920x1080.jpg');
   background-size: initial;
+  transition:  background-image 1s ease;
 
   position: relative;
 
@@ -41,6 +42,8 @@ body {
 
 svg {
   cursor: pointer;
+  transition: fill 1s ease;
+
 }
 
 .hide {
@@ -62,6 +65,8 @@ svg {
   justify-content: center;
 
   background: var(--main-lightmode-bg);
+  transition: background-color 1s ease;
+
   border-radius: 0.8rem;
 
   padding: 0.3125rem;
@@ -75,7 +80,7 @@ svg {
 
 .switch {
   transform: matrix(1, 0, 0, 1, 0, 0);
-  transition: all 3ms ease-in;
+  transition: fill 1s ease;
 }
 
 main {
@@ -108,23 +113,29 @@ main {
   height: 3.4rem;
   display: flex;
   gap: 1rem;
+  transition:  background-image 1s ease;
+
 }
 
 .tabs {
   width: 10.5rem;
   height: 3.4rem;
   background: var(--main-lightmode-bg);
-
+  
+  
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   border-radius: 8px 8px 0px 0px;
-
+  
   font-size: 1.5rem;
   line-height: 1.4rem;
   color: var(--button-lightmode-color);
   cursor: pointer;
+  
+  transition: background-color 1s ease;
+
 }
 
 .pomodoro.selected,
@@ -134,6 +145,8 @@ main {
 
 .main-content {
   background: var(--main-lightmode-bg);
+  transition: background-color 1s ease;
+
   width: 100%;
   height: 54.9rem;
 
@@ -143,6 +156,7 @@ main {
   gap: 3.6rem;
 
   border-radius: 0px 8px 8px 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .timer {
@@ -158,6 +172,8 @@ main {
 .counter {
   font-size: 15rem;
   color: var(--button-lightmode-color);
+  transition: all 1s ease;
+
 
   padding: 0;
 }
@@ -167,7 +183,9 @@ main {
   height: 2.1rem;
   border: 0.4rem solid hsla(0, 6%, 53%, 0.4);
 
-  background: var(--main-lightmode-bg);
+  background: transparent;
+  transition: all 1s ease;
+
 
   border-radius: 8px;
 
@@ -188,6 +206,8 @@ main {
   justify-content: center;
   gap: 3.5rem;
   color: var(--button-lightmode-color);
+  transition: all 1s ease;
+
 
   width: 100%;
 }
@@ -235,6 +255,8 @@ main {
 
   background: var(--cards-color-bg);
   border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
 }
 
 /* .cards:first-child {
@@ -252,6 +274,8 @@ input[type='range'] {
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: background-color 1s ease;
+
 
   cursor: pointer;
   width: 9.2rem;
@@ -261,23 +285,27 @@ input[type='range'] {
 
   opacity: 1;
 
-  transition: all 1s ease-in;
+  transition: all 1s ease;
 }
 
 input[type='range']::-webkit-slider-runnable-track {
   background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 1s ease;
+
   height: 0.5rem;
   border-radius: 1rem;
 
   opacity: 1;
 
-  transition: all 1s ease-in;
+  transition: all 1s ease;
 }
 
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   background-color: #323239;
+  transition: background-color 1s ease;
+
 
   height: 1.2rem;
   width: 1.2rem;
@@ -286,5 +314,5 @@ input[type='range']::-webkit-slider-thumb {
 
   opacity: 1;
 
-  transition: all 1s ease-in;
+  transition: all 1s ease;
 }

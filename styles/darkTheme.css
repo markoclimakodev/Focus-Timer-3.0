@@ -1,13 +1,18 @@
 body.dark {
   background-image: url('../src/images/themes/darkmode/1920×1080.jpg');
+  transition: background-image 1s ease;
 }
 
 body.dark svg path {
-  fill: hsla(216, 10%, 90%, 1);
+  fill: var(--button-darkmode-color);
+  transition: fill 1s ease;
 }
 
 body.dark svg.switch path {
   fill: #999999;
+  transition: fill 1s ease;
+
+
 }
 
 body.dark svg.switch path.body {
@@ -17,22 +22,34 @@ body.dark svg.switch path.body {
 body.dark .tabs,
 body.dark .main-content,
 body.dark .theme-card {
-  background-color: hsla(0, 0%, 0%, 0.75);
+  background-color: var(--main-darkmode-bg);
+  transition: background-color 1s ease;
+
+}
+body.dark .main-content {
+    box-shadow: rgba(15, 43, 255, 0.15) 1.95px 1.95px 2.6px;
+
 }
 
 body.dark .time-bar {
-  border: 0.4rem solid #8e7f7f;
-  background-color: hsla(0, 0%, 0%, 0.75);
+  border: 0.4rem solid  var(--cards-color-bg);
+  background-color: transparent;
+  transition: all 1s ease;
+
 }
 
 body.dark .tabs,
 body.dark .counter,
 body.dark .controls-container {
-  color: hsla(216, 10%, 90%, 1);
+  color: var(--button-darkmode-color);
+  transition: all 1s ease;
+
 }
 
 body.dark input[type='range'],
 body.dark input[type='range']::-webkit-slider-runnable-track,
 body.dark input[type='range']::-webkit-slider-thumb {
   background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 1s ease;
+
 }
