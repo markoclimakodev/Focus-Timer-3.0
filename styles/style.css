@@ -1,13 +1,13 @@
 :root {
   font-size: 62.5%;
 
-  --main-lightmode-bg: hsla(0, 0%, 97%, 0.75);
+  --main-lightmode-bg: hsla(0, 0%, 97%, 0.6);
   --button-lightmode-color: hsla(248, 2%, 20%, 1);
   --button-lightmode-icon-selected: hsla(240, 31%, 98%, 1);
 
   --button-color-selected: hsla(227, 86%, 53%, 1);
   --cards-color-bg-selected: hsla(227, 85%, 53%, 0.75);
-  --cards-color-bg: hsla(0, 6%, 53%, 0.4);
+  --cards-color-bg: hsla(0, 6%, 53%, 0.5);
 
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
   --button-darkmode-color: hsla(216, 10%, 90%, 1);
@@ -44,8 +44,8 @@ svg {
 .theme-card {
   position: fixed;
 
-  right: 2rem;
-  top: 2rem;
+  right: 1rem;
+  top: 1rem;
 
   width: 8rem;
   height: 8rem;
@@ -76,6 +76,7 @@ main {
   height: 58.3rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .aplication-tabs {
@@ -85,6 +86,15 @@ main {
   align-items: center;
   width: 100%;
 }
+
+.aplication-tabs .tabs.sight {
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  
+  background-color: transparent;
+  
+  }
 
 .main-tabs {
   width: 22rem;
@@ -107,6 +117,7 @@ main {
   font-size: 1.5rem;
   line-height: 1.4rem;
   color: var(--button-lightmode-color);
+  cursor: pointer;
 }
 
 .pomodoro.selected,
@@ -220,7 +231,7 @@ gap: 2rem;
 
 width: 155.25px;
 
-background: rgba(142, 127, 127, 0.4);
+background: var(--cards-color-bg);
 border-radius: 24px;
 }
 
