@@ -28,14 +28,16 @@ body {
   height: 100vh;
 
   background-image: url('../src/images/themes/lightmode/1920x1080.jpg');
-  background-size: cover;
+  background-size: initial;
 
   position: relative;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn {
+svg {
   cursor: pointer;
 }
 
@@ -72,8 +74,8 @@ body {
 main {
   width: 103.5rem;
   height: 58.3rem;
-
-  margin: 23.2rem auto 26.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .aplication-tabs {
@@ -149,7 +151,8 @@ main {
   height: 2.1rem;
   border: 0.4rem solid hsla(0, 6%, 53%, 0.4);
 
-  background: hsla(0, 11%, 91%, 0.75);
+  background: var(--main-lightmode-bg);
+  /* background: hsla(0, 11%, 91%, 0.75); */
 
   border-radius: 8px;
 
@@ -159,7 +162,7 @@ main {
 }
 
 .fill {
-  width: 100%;
+  width: 45%;
   height: 1.2rem;
   border-radius: 8px 8px 8px 8px;
   /* animation: counter-status 6s linear infinite; */
@@ -170,6 +173,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 3.5rem;
+  color: var(--button-lightmode-color);
 
   width: 100%;
 }
@@ -178,7 +182,6 @@ main {
   font-size: 2rem;
   line-height: 2.3rem;
   text-align: center;
-  color: var(--button-lightmode-color);
 }
 
 .containers {
@@ -193,10 +196,6 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
-
-}
-
-.t45.selected {
 
 }
 
@@ -225,15 +224,12 @@ background: rgba(142, 127, 127, 0.4);
 border-radius: 24px;
 }
 
-.cards:first-child {
+/* .cards:first-child {
   background: rgba(34, 79, 238, 0.75);
   border-radius: 24px;
 
-}
+} */
 
-.cards:first-child img,.cards:first-child input[type='range']  {
-  filter: invert(1);
-}
 
 .cards input {
   width:101.25px;
