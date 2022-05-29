@@ -12,6 +12,8 @@
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
   --button-darkmode-color: hsla(216, 10%, 90%, 1);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
+
+  transition: all 750ms ease-in;
 }
 
 * {
@@ -163,13 +165,11 @@ main {
   border: 0.4rem solid hsla(0, 6%, 53%, 0.4);
 
   background: var(--main-lightmode-bg);
-  /* background: hsla(0, 11%, 91%, 0.75); */
 
   border-radius: 8px;
 
   display: flex;
   align-items: center;
-  padding: 0;
 }
 
 .fill {
