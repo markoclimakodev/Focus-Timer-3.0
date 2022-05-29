@@ -10,7 +10,7 @@
     <title>Focus Timer 3.0</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/darkTheme.css" />
-    <link rel="stylesheet" href="styles/sightTwo.css">
+    <link rel="stylesheet" href="styles/sightTwo.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
@@ -125,7 +125,7 @@
         </svg>
       </div>
       <svg
-      class="switch"
+        class="switch"
         width="65"
         height="27"
         viewBox="0 0 65 27"
@@ -139,8 +139,8 @@
           />
         </g>
         <g filter="url(#filter1_d_26_133)">
-          <path 
-          class="body"
+          <path
+            class="body"
             d="M12.6057 0.841414C18.4645 0.830271 23.224 5.29838 23.2362 10.8212C23.2484 16.344 18.5088 20.8302 12.6499 20.8414C6.79106 20.8525 2.03159 16.3844 2.01937 10.8616C2.00714 5.33873 6.74678 0.852557 12.6057 0.841414Z"
             fill="#333335"
           />
@@ -255,6 +255,7 @@
               <p>TEMPO SESSÂO</p>
               <section class="session-options">
                 <svg
+                  class="d25"
                   width="41"
                   height="41"
                   viewBox="0 0 41 41"
@@ -272,6 +273,7 @@
                 </svg>
 
                 <svg
+                  class="d45"
                   width="41"
                   height="41"
                   viewBox="0 0 41 41"
@@ -289,6 +291,7 @@
                 </svg>
 
                 <svg
+                  class="d60"
                   width="41"
                   height="41"
                   viewBox="0 0 41 41"
@@ -311,6 +314,7 @@
               <p>CONTROLES</p>
               <section class="session-options">
                 <svg
+                  class="play"
                   width="41"
                   height="41"
                   viewBox="0 0 41 41"
@@ -323,6 +327,34 @@
                   />
                 </svg>
                 <svg
+                  class="pause hide"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 20C0 8.95767 8.95767 0 20 0C31.0423 0 40 8.95767 40 20C40 31.0423 31.0423 40 20 40C8.95767 40 0 31.0423 0 20ZM20 3.07693C10.6577 3.07693 3.07693 10.6577 3.07693 20C3.07693 29.3423 10.6577 36.9231 20 36.9231C29.3423 36.9231 36.9231 29.3423 36.9231 20C36.9231 10.6577 29.3423 3.07693 20 3.07693Z"
+                    fill="#333335"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.3846 12.3077C16.2346 12.3077 16.9231 12.9962 16.9231 13.8462V26.1538C16.9231 27.0038 16.2346 27.6923 15.3846 27.6923C14.5346 27.6923 13.8462 27.0038 13.8462 26.1538V13.8462C13.8462 12.9962 14.5346 12.3077 15.3846 12.3077Z"
+                    fill="#333335"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.6154 12.3077C25.4654 12.3077 26.1538 12.9962 26.1538 13.8462V26.1538C26.1538 27.0038 25.4654 27.6923 24.6154 27.6923C23.7654 27.6923 23.0769 27.0038 23.0769 26.1538V13.8462C23.0769 12.9962 23.7654 12.3077 24.6154 12.3077Z"
+                    fill="#333335"
+                  />
+                </svg>
+                <svg
+                  class="stop"
                   width="41"
                   height="41"
                   viewBox="0 0 41 41"
@@ -354,8 +386,10 @@
               />
             </svg>
 
-            <label for="tree-volume"></label>
-            <input type="range" name="tree" id="tree-volume" />
+            <label for="tree-volume" class="hide">
+              Volume som de natureza</label
+            >
+            <input type="range" name="tree" id="tree-volume" value="50" />
           </section>
           <section class="cards rain">
             <svg
@@ -370,10 +404,10 @@
                 fill="#333335"
               />
             </svg>
-            <label for="rain-volume"></label>
-            <input type="range" name="rain" id="rain-volume" />
+            <label for="rain-volume" class="hide">Volume som de chuva</label>
+            <input type="range" name="rain" id="rain-volume" value="50" />
           </section>
-          <section class="cards coffeshop">
+          <section class="cards coffeeshop">
             <svg
               width="64"
               height="62"
@@ -386,8 +420,15 @@
                 fill="#333335"
               />
             </svg>
-            <label for="coffeshop-volume"></label>
-            <input type="range" name="coffeshop" id="coffeshop-volume" />
+            <label for="coffeeshop-volume" class="hide">
+              Volume som de cafeteria</label
+            >
+            <input
+              type="range"
+              name="coffeeshop"
+              id="coffeeshop-volume"
+              value="50"
+            />
           </section>
           <section class="cards fire">
             <svg
@@ -402,8 +443,8 @@
                 fill="#333335"
               />
             </svg>
-            <label for="fire-volume"></label>
-            <input type="range" name="fire" id="fire-volume" />
+            <label for="fire-volume" class="hide"> Volume som de fogo</label>
+            <input type="range" name="fire" id="fire-volume" value="50" />
           </section>
         </section>
       </section>
