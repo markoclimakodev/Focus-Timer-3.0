@@ -1,6 +1,7 @@
 const body = document.querySelector('body');
 
 const switchBtn = document.querySelector('.switch');
+console.log(switchBtn)
 
 const pomodoro = document.querySelector('.pomodoro');
 const todo = document.querySelector('.to-do');
@@ -33,3 +34,30 @@ const coffeeshopVolume = document.querySelector('#coffeeshop-volume');
 
 const fireBtn = document.querySelector('.fire');
 const fireVolume = document.querySelector('#fire-volume');
+
+export  {
+    body,
+    switchBtn,
+    pomodoro,
+    todo,
+    sight,
+    minutesDisplay,
+    secondsDisplay,
+    timerBar,
+    currentSession,
+    totalSession,
+    playBtn,
+    pauseBtn,
+    stopBtn,
+    sessionD25,
+    sessionD45,
+    sessionD60,
+    treeBtn,
+    treeVolume,
+    rainBtn,
+    rainVolume,
+    coffeeshopBtn,
+    coffeeshopVolume,
+    fireBtn,
+    fireVolume
+}

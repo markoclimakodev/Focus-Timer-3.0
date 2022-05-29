@@ -75,6 +75,7 @@ svg {
 
 .switch {
   transform: matrix(1, 0, 0, 1, 0, 0);
+  transition: all 3ms ease-in;
 }
 
 main {
@@ -141,7 +142,7 @@ main {
   align-items: center;
   gap: 3.6rem;
 
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 8px 8px 8px;
 }
 
 .timer {
