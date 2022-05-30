@@ -11,8 +11,6 @@ body.dark svg path {
 body.dark svg.switch path {
   fill: #999999;
   transition: fill 1s ease;
-
-
 }
 
 body.dark svg.switch path.body {
@@ -24,18 +22,15 @@ body.dark .main-content,
 body.dark .theme-card {
   background-color: var(--main-darkmode-bg);
   transition: background-color 1s ease;
-
 }
 body.dark .main-content {
-    box-shadow: rgba(15, 43, 255, 0.15) 1.95px 1.95px 2.6px;
-
+  box-shadow: rgba(15, 43, 255, 0.15) 1.95px 1.95px 2.6px;
 }
 
 body.dark .time-bar {
-  border: 0.4rem solid  var(--cards-color-bg);
+  border: 0.4rem solid var(--cards-color-bg);
   background-color: transparent;
   transition: all 1s ease;
-
 }
 
 body.dark .tabs,
@@ -43,7 +38,6 @@ body.dark .counter,
 body.dark .controls-container {
   color: var(--button-darkmode-color);
   transition: all 1s ease;
-
 }
 
 body.dark input[type='range'],
@@ -51,5 +45,4 @@ body.dark input[type='range']::-webkit-slider-runnable-track,
 body.dark input[type='range']::-webkit-slider-thumb {
   background-color: rgba(255, 255, 255, 0.5);
   transition: background-color 1s ease;
-
 }
