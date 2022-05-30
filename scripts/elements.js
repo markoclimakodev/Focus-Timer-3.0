@@ -1,7 +1,6 @@
 const body = document.querySelector('body');
 
 const switchBtn = document.querySelector('.switch');
-console.log(switchBtn);
 
 const pomodoro = document.querySelector('.pomodoro');
 const todo = document.querySelector('.to-do');
