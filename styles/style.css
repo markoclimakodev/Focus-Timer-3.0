@@ -228,6 +228,10 @@ main {
   gap: 1rem;
 }
 
+.pause.selected path {
+fill: rgb(47, 0, 255)
+}
+
 .session .number-of-seesion {
   font-size: 32px;
   line-height: 38px;
