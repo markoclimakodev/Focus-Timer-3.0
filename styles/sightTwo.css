@@ -4,13 +4,13 @@ body.sightTwo .main-content {
   justify-content: space-between;
   align-items: flex-start;
   padding: 5rem 4.5rem;
-  
 }
 
 body.sightTwo .timer {
-  align-self: flex-end;  
+  align-self: flex-end;
   gap: 2rem;
   height: 100%;
+
 }
 
 body.sightTwo .sounds {
@@ -38,3 +38,4 @@ body.sightTwo .sounds:nth-child(3) {
 body.sightTwo .sounds:nth-child(4) {
   grid-area: D;
 }
+
