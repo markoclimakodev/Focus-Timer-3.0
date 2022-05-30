@@ -1,4 +1,4 @@
-import { body, switchBtn, sight,playBtn,pauseBtn } from './elements.js';
+import { body, switchBtn, sight,playBtn,pauseBtn,stopBtn } from './elements.js';
 import SwitchTheme from './switchThemes.js';
 import Sight from './handleSight.js';
 import Controls from './controls.js';
@@ -13,6 +13,9 @@ pauseBtn.addEventListener('click',()=> {
   controls.handleTimerStatus()
 })
 
+stopBtn.addEventListener('click',()=> {
+  controls.resetControls();
+})
 
 
 
