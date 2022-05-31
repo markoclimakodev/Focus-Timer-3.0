@@ -47,9 +47,8 @@ body.dark input[type='range']::-webkit-slider-thumb {
   transition: background-color 1s ease;
 }
 
-
 body.dark .cards {
-background: var(--cards-color-bg-dark);
+  background: var(--cards-color-bg-dark);
 }
 
 body.dark .cards.selected {
@@ -60,14 +59,11 @@ body.dark .cards.selected {
 body.dark .cards.selected svg path {
   fill: var(--button-darkmode-icon-selected);
   transition: fill 1s ease;
-
 }
-
 
 body.dark .cards.selected input[type='range'],
 body.dark .cards.selected input[type='range']::-webkit-slider-runnable-track,
 body.dark .cards.selected input[type='range']::-webkit-slider-thumb {
   background-color: var(--button-darkmode-icon-selected);
   transition: background 1s ease;
-
 }

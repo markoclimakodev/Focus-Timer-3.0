@@ -93,7 +93,7 @@ export default function Timer({
     timeBarFillReset();
 
     if (sessionD25.classList.contains('selected')) {
-      updateDisplay(25,0);
+      updateDisplay(25, 0);
     } else if (sessionD45.classList.contains('selected')) {
       updateDisplay(45, 0);
     } else {

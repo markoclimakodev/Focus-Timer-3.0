@@ -285,7 +285,6 @@ main {
 .cards.selected svg path {
   fill: var(--button-lightmode-icon-selected);
   transition: fill 1s ease;
-
 }
 
 .cards.selected input[type='range'],
@@ -293,7 +292,6 @@ main {
 .cards.selected input[type='range']::-webkit-slider-thumb {
   background-color: var(--button-lightmode-icon-selected);
   transition: background 1s ease;
-
 }
 
 .cards input {
