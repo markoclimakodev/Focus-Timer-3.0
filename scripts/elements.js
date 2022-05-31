@@ -11,8 +11,8 @@ const secondsDisplay = document.querySelector('.seconds');
 
 const timerBar = document.querySelector('.fill');
 
-const currentSession = document.querySelector('.current-session');
-const totalSession = document.querySelector('.total-session');
+const currentSession = document.querySelector('.currentSession');
+const totalSession = document.querySelector('.totalSession');
 
 const playBtn = document.querySelector('.play');
 const pauseBtn = document.querySelector('.pause');

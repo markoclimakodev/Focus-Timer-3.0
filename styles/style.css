@@ -191,11 +191,24 @@ main {
 }
 
 .fill {
-  width: 45%;
+  width: 0%;
   height: 1.2rem;
   border-radius: 8px 8px 8px 8px;
-  /* animation: counter-status 6s linear infinite; */
   background-color: #224fee;
+}
+
+.fill.d25 {
+  animation: counter-status 1500s linear infinite;
+}
+
+.fill.d45 {
+  animation: counter-status 2700s linear infinite;
+
+}
+
+.fill.d60 {
+  animation: counter-status 3600s linear infinite;
+  
 }
 
 .controls-container {
@@ -204,7 +217,7 @@ main {
   gap: 3.5rem;
   color: var(--button-lightmode-color);
   transition: all 1s ease;
-
+ 
   width: 100%;
 }
 
@@ -212,6 +225,7 @@ main {
   font-size: 2rem;
   line-height: 2.3rem;
   text-align: center;
+
 }
 
 .containers {
@@ -220,6 +234,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+
 }
 
 .session-options {
@@ -228,11 +243,11 @@ main {
   gap: 1rem;
 }
 
-.pause.selected path {
+.pause.selected path, .d25.selected path,.d45.selected path,.d60.selected path {
 fill: rgb(47, 0, 255)
 }
 
-.session .number-of-seesion {
+.session .numberOfSession {
   font-size: 32px;
   line-height: 38px;
 }
@@ -314,4 +329,27 @@ input[type='range']::-webkit-slider-thumb {
   opacity: 1;
 
   transition: all 1s ease;
+}
+
+
+@keyframes counter-status {
+  0% {
+    width: 0%;
+  }
+
+  25% {
+    width: 25%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  75% {
+    width: 75%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
