@@ -39,7 +39,6 @@ export default function Timer({
         updateSession(session - 1);
         if (round == false) {
           round = true;
-          console.log('im here');
           restTime();
         }
 
