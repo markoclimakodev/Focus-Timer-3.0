@@ -1,7 +1,7 @@
 import {
   body,
   switchBtn,
-  sight,
+  view,
   playBtn,
   pauseBtn,
   stopBtn,
@@ -18,7 +18,7 @@ import {
   fireBtn,
 } from './elements.js';
 import SwitchTheme from './switchThemes.js';
-import Sight from './handleSight.js';
+import View from './handleView.js';
 import Controls from './controls.js';
 import Timer from './timer.js';
 import Sounds from './sound.js';
@@ -83,8 +83,8 @@ switchBtn.addEventListener('click', () => {
   SwitchTheme({ body, switchBtn });
 });
 
-sight.addEventListener('click', () => {
-  Sight({ body });
+view.addEventListener('click', () => {
+  View({ body });
 });
 
 treeBtn.addEventListener('click', () => {

@@ -4,7 +4,7 @@ const switchBtn = document.querySelector('.switch');
 
 const pomodoro = document.querySelector('.pomodoro');
 const todo = document.querySelector('.to-do');
-const sight = document.querySelector('.sight');
+const view = document.querySelector('.view');
 
 const minutesDisplay = document.querySelector('.minutes');
 const secondsDisplay = document.querySelector('.seconds');
@@ -38,7 +38,7 @@ export {
   switchBtn,
   pomodoro,
   todo,
-  sight,
+  view,
   minutesDisplay,
   secondsDisplay,
   timerBar,

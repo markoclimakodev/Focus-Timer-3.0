@@ -6,7 +6,6 @@ export default function Timer({
   sessionD25,
   sessionD45,
   timerBar,
-  currentSession,
 }) {
   let timerTimeout;
   let round = new Boolean(false);
