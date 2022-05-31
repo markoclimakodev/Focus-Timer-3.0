@@ -37,13 +37,13 @@ const timer = Timer({
 });
 
 playBtn.addEventListener('click', () => {
-  controls.handleTimerStatus();
+  controls.play();
   timer.counter();
   timer.timeBarFill();
 });
 
 pauseBtn.addEventListener('click', () => {
-  controls.handleTimerStatus();
+  controls.pause();
   timer.pauseCounter();
 });
 
