@@ -9,12 +9,10 @@
   --cards-color-bg-selected: hsla(227, 85%, 53%, 0.75);
   --cards-color-bg-light: hsla(253, 7%, 75%, 0.7);
 
-
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
   --button-darkmode-color: hsla(216, 10%, 90%, 1);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
   --cards-color-bg-dark: hsla(240, 3%, 20%, 0.7);
- 
 
   transition: all 1s ease;
 }
@@ -248,7 +246,6 @@ main {
 .d60.selected path {
   fill: var(--button-color-selected);
   transition: fill 500ms ease;
-  
 }
 
 .session .numberOfSession {
@@ -276,14 +273,28 @@ main {
 
   background: var(--cards-color-bg-light);
   border-radius: 24px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-/* .cards:first-child {
+.cards.selected {
   background: rgba(34, 79, 238, 0.75);
-  border-radius: 24px;
+  transition: background 1s ease;
+}
 
-} */
+.cards.selected svg path {
+  fill: var(--button-lightmode-icon-selected);
+  transition: fill 1s ease;
+
+}
+
+.cards.selected input[type='range'],
+.cards.selected input[type='range']::-webkit-slider-runnable-track,
+.cards.selected input[type='range']::-webkit-slider-thumb {
+  background-color: var(--button-lightmode-icon-selected);
+  transition: background 1s ease;
+
+}
 
 .cards input {
   width: 101.25px;

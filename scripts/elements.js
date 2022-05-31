@@ -27,7 +27,6 @@ const treeVolume = document.querySelector('#tree-volume');
 
 const rainBtn = document.querySelector('.rain');
 const rainVolume = document.querySelector('#rain-volume');
-
 const coffeeshopBtn = document.querySelector('.coffeeshop');
 const coffeeshopVolume = document.querySelector('#coffeeshop-volume');
 

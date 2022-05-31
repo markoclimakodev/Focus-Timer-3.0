@@ -6,6 +6,11 @@ export default function Controls({
   sessionD25,
   sessionD45,
   sessionD60,
+  treeBtn,
+  rainBtn,
+  coffeeshopBtn,
+  fireBtn,
+  sounds,
 }) {
   const play = () => {
     playBtn.classList.add('hide');
@@ -30,7 +35,7 @@ export default function Controls({
   };
 
   const session25 = () => {
-    updateDisplay(25,0);
+    updateDisplay(25, 0);
     sessionD25.classList.add('selected');
     sessionD45.classList.remove('selected');
     sessionD60.classList.remove('selected');
@@ -53,6 +58,35 @@ export default function Controls({
     resetControls();
   };
 
+  const forestSound = () => {
+    treeBtn.classList.add('selected');
+    rainBtn.classList.remove('selected');
+    coffeeshopBtn.classList.remove('selected');
+    fireBtn.classList.remove('selected');
+  };
+
+  const rainSound = () => {
+    treeBtn.classList.remove('selected');
+    rainBtn.classList.add('selected');
+    coffeeshopBtn.classList.remove('selected');
+    fireBtn.classList.remove('selected');
+  };
+
+  const coffeeshopSound = () => {
+    treeBtn.classList.remove('selected');
+    rainBtn.classList.remove('selected');
+    coffeeshopBtn.classList.add('selected');
+    fireBtn.classList.remove('selected');
+
+  };
+
+  const fireSound = () => {
+    treeBtn.classList.remove('selected');
+    rainBtn.classList.remove('selected');
+    coffeeshopBtn.classList.remove('selected');
+    fireBtn.classList.add('selected');
+  };
+
   return {
     play,
     pause,
@@ -61,5 +95,9 @@ export default function Controls({
     session45,
     session60,
     updateDisplay,
+    forestSound,
+    rainSound,
+    coffeeshopSound,
+    fireSound
   };
 }

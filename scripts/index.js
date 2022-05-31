@@ -12,11 +12,16 @@ import {
   sessionD60,
   timerBar,
   currentSession,
+  treeBtn,
+  rainBtn,
+  coffeeshopBtn,
+  fireBtn,
 } from './elements.js';
 import SwitchTheme from './switchThemes.js';
 import Sight from './handleSight.js';
 import Controls from './controls.js';
 import Timer from './timer.js';
+import Sounds from './sound.js';
 
 const controls = Controls({
   playBtn,
@@ -26,7 +31,12 @@ const controls = Controls({
   sessionD25,
   sessionD45,
   sessionD60,
+  treeBtn,
+  rainBtn,
+  coffeeshopBtn,
+  fireBtn,
 });
+
 const timer = Timer({
   minutesDisplay,
   secondsDisplay,
@@ -37,6 +47,8 @@ const timer = Timer({
   timerBar,
   currentSession,
 });
+
+const sounds = Sounds();
 
 playBtn.addEventListener('click', () => {
   controls.play();
@@ -73,4 +85,40 @@ switchBtn.addEventListener('click', () => {
 
 sight.addEventListener('click', () => {
   Sight({ body });
+});
+
+treeBtn.addEventListener('click', () => {
+  controls.forestSound();
+  sounds.forest.play();
+  sounds.rain.pause();
+  sounds.coffeeShop.pause();
+  sounds.fireplace.pause();
+  sounds.forestVolumeControlBtn();
+});
+
+rainBtn.addEventListener('click', () => {
+  controls.rainSound();
+  sounds.forest.pause();
+  sounds.rain.play();
+  sounds.coffeeShop.pause();
+  sounds.fireplace.pause();
+  sounds.rainVolumeControlBtn();
+});
+
+coffeeshopBtn.addEventListener('click', () => {
+  controls.coffeeshopSound();
+  sounds.forest.pause();
+  sounds.rain.pause();
+  sounds.coffeeShop.play();
+  sounds.fireplace.pause();
+  sounds.coffeeShopeVolumeControlBtn();
+});
+
+fireBtn.addEventListener('click', () => {
+  controls.fireSound();
+  sounds.forest.pause();
+  sounds.rain.pause();
+  sounds.coffeeShop.pause();
+  sounds.fireplace.play();
+  sounds.fireplaceVolumeControlBtn();
 });
