@@ -247,7 +247,7 @@ main {
 .d45.selected path,
 .d60.selected path {
   fill: var(--button-color-selected);
-  transition: fill 1s ease;
+  transition: fill 500ms ease;
   
 }
 
