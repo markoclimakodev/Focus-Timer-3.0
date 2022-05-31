@@ -6,7 +6,7 @@
   --button-lightmode-icon-selected: hsla(240, 31%, 98%, 1);
 
   --button-color-selected: hsla(227, 86%, 53%, 1);
-  --cards-color-bg-selected: hsla(227, 85%, 53%, 0.75);
+  --cards-color-bg-selected: hsla(227, 85%, 53%, 0.5);
   --cards-color-bg-light: hsla(253, 7%, 75%, 0.7);
 
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
