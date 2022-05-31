@@ -11,6 +11,7 @@ import {
   sessionD45,
   sessionD60,
   timerBar,
+  currentSession,
 } from './elements.js';
 import SwitchTheme from './switchThemes.js';
 import Sight from './handleSight.js';
@@ -34,6 +35,7 @@ const timer = Timer({
   sessionD25,
   sessionD45,
   timerBar,
+  currentSession,
 });
 
 playBtn.addEventListener('click', () => {
@@ -50,6 +52,7 @@ pauseBtn.addEventListener('click', () => {
 stopBtn.addEventListener('click', () => {
   controls.resetControls();
   timer.resetCounter();
+  timer.resetSession();
 });
 
 sessionD25.addEventListener('click', () => {

@@ -7,11 +7,14 @@
 
   --button-color-selected: hsla(227, 86%, 53%, 1);
   --cards-color-bg-selected: hsla(227, 85%, 53%, 0.75);
-  --cards-color-bg: hsla(0, 6%, 53%, 0.5);
+  --cards-color-bg-light: hsla(253, 7%, 75%, 0.7);
+
 
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
   --button-darkmode-color: hsla(216, 10%, 90%, 1);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
+  --cards-color-bg-dark: hsla(240, 3%, 20%, 0.7);
+ 
 
   transition: all 1s ease;
 }
@@ -40,13 +43,14 @@ body {
   align-items: center;
 }
 
-svg {
+svg path {
   cursor: pointer;
   transition: fill 1s ease;
 }
 
 .hide {
   display: none;
+  transition: display 1s ease;
 }
 
 .theme-card {
@@ -143,7 +147,6 @@ main {
   background: var(--main-lightmode-bg);
   transition: background-color 1s ease-in-out;
 
-
   width: 100%;
   height: 54.9rem;
 
@@ -203,12 +206,10 @@ main {
 
 .fill.d45 {
   animation: counter-status 2700s linear infinite;
-
 }
 
 .fill.d60 {
   animation: counter-status 3600s linear infinite;
-  
 }
 
 .controls-container {
@@ -217,7 +218,7 @@ main {
   gap: 3.5rem;
   color: var(--button-lightmode-color);
   transition: all 1s ease;
- 
+
   width: 100%;
 }
 
@@ -225,7 +226,6 @@ main {
   font-size: 2rem;
   line-height: 2.3rem;
   text-align: center;
-
 }
 
 .containers {
@@ -234,7 +234,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-
 }
 
 .session-options {
@@ -243,8 +242,13 @@ main {
   gap: 1rem;
 }
 
-.pause.selected path, .d25.selected path,.d45.selected path,.d60.selected path {
-fill: rgb(47, 0, 255)
+.pause.selected path,
+.d25.selected path,
+.d45.selected path,
+.d60.selected path {
+  fill: var(--button-color-selected);
+  transition: fill 1s ease;
+  
 }
 
 .session .numberOfSession {
@@ -270,9 +274,9 @@ fill: rgb(47, 0, 255)
 
   width: 155.25px;
 
-  background: var(--cards-color-bg);
+  background: var(--cards-color-bg-light);
   border-radius: 24px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 /* .cards:first-child {
@@ -330,7 +334,6 @@ input[type='range']::-webkit-slider-thumb {
 
   transition: all 1s ease;
 }
-
 
 @keyframes counter-status {
   0% {

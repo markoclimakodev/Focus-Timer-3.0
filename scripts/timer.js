@@ -6,9 +6,24 @@ export default function Timer({
   sessionD25,
   sessionD45,
   timerBar,
+  currentSession,
 }) {
   let timerTimeout;
   let round = new Boolean(false);
+  let session = 1
+
+  const updateSession = (session) => {
+    let currentSession = document.querySelector('.currentSession');
+    currentSession.textContent = session;
+    if(session > 4) {
+      resetSession()
+    }
+  };
+
+  const resetSession = () => {
+    let currentSession = document.querySelector('.currentSession');
+    currentSession.textContent = 1;
+  };
 
   const counter = () => {
     timerTimeout = setTimeout(() => {
@@ -19,17 +34,16 @@ export default function Timer({
       updateDisplay(minutes, 0);
 
       if (isFinished) {
-   
-
+        session++
+        updateSession(session);
         resetCounter();
-        if (round == false) {
+        if (round === false) {
           round = true;
           restTime();
         }
-        
+
         return;
       }
-
 
       if (seconds <= 0) {
         seconds = 60;
@@ -79,7 +93,7 @@ export default function Timer({
     timeBarFillReset();
 
     if (sessionD25.classList.contains('selected')) {
-      updateDisplay(25, 0);
+      updateDisplay(0, 10);
     } else if (sessionD45.classList.contains('selected')) {
       updateDisplay(45, 0);
     } else {
@@ -93,5 +107,6 @@ export default function Timer({
     resetCounter,
     updateDisplay,
     timeBarFill,
+    resetSession,
   };
 }
