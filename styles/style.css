@@ -287,13 +287,6 @@ main {
   transition: fill 1s ease;
 }
 
-.cards.selected input[type='range'],
-.cards.selected input[type='range']::-webkit-slider-runnable-track,
-.cards.selected input[type='range']::-webkit-slider-thumb {
-  background-color: var(--button-lightmode-icon-selected);
-  transition: background 1s ease;
-}
-
 .cards input {
   width: 101.25px;
   outline: none;
@@ -311,7 +304,7 @@ input[type='range'] {
 
   border-radius: 1rem;
 
-  opacity: 1;
+  opacity: 0;
 
   transition: all 1s ease;
 }
@@ -323,7 +316,7 @@ input[type='range']::-webkit-slider-runnable-track {
   height: 0.5rem;
   border-radius: 1rem;
 
-  opacity: 1;
+  opacity: 0;
 
   transition: all 1s ease;
 }
@@ -339,10 +332,19 @@ input[type='range']::-webkit-slider-thumb {
   margin-top: -0.35rem;
   border-radius: 1rem;
 
-  opacity: 1;
+  opacity: 0;
 
   transition: all 1s ease;
 }
+
+.cards.selected input[type='range'],
+.cards.selected input[type='range']::-webkit-slider-runnable-track,
+.cards.selected input[type='range']::-webkit-slider-thumb {
+  background-color: var(--button-lightmode-icon-selected);
+  transition: background 1s ease;
+  opacity: 1;
+}
+
 
 @keyframes counter-status {
   0% {
