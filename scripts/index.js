@@ -17,11 +17,13 @@ import {
   coffeeshopBtn,
   fireBtn,
 } from './elements.js';
+import Sounds from './sound.js';
 import SwitchTheme from './switchThemes.js';
 import View from './handleView.js';
 import Controls from './controls.js';
 import Timer from './timer.js';
-import Sounds from './sound.js';
+
+const sounds = Sounds();
 
 const controls = Controls({
   playBtn,
@@ -46,9 +48,9 @@ const timer = Timer({
   sessionD45,
   timerBar,
   currentSession,
+  sounds
 });
 
-const sounds = Sounds();
 
 playBtn.addEventListener('click', () => {
   controls.play();

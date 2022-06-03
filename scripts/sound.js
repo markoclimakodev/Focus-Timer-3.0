@@ -1,6 +1,11 @@
 export default function Sounds() {
   const clickedSound = new Audio('./src/sounds/clickSound.mp3');
   const timeEnd = new Audio('./src/sounds/timeEnd.mp3');
+  const thirtySeconds = new Audio('./src/sounds/thirty-seconds-left.mp3');
+  const sessionRoundCompleted = new Audio(
+    './src/sounds/sessions-round-completed.mp3'
+  );
+  const breaktime = new Audio('./src/sounds/break-time-finished.mp3');
 
   const forest = new Audio('../src/sounds/Floresta.wav');
   const rain = new Audio('./src/sounds/Chuva.wav');
@@ -56,5 +61,8 @@ export default function Sounds() {
     rainVolumeControlBtn,
     fireplaceVolumeControlBtn,
     coffeeShopeVolumeControlBtn,
+    thirtySeconds,
+    sessionRoundCompleted,
+    breaktime,
   };
 }

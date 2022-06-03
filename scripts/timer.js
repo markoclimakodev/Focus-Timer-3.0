@@ -6,6 +6,7 @@ export default function Timer({
   sessionD25,
   sessionD45,
   timerBar,
+  sounds
 }) {
   let timerTimeout;
   let round = new Boolean(false);
@@ -32,6 +33,10 @@ export default function Timer({
 
       updateDisplay(minutes, 0);
 
+      if(minutes == '00' && seconds == '30') {
+        sounds.thirtySeconds.play()
+      }
+
       if (isFinished) {
         resetCounter();
         session++;
@@ -54,9 +59,9 @@ export default function Timer({
     }, 1000);
   };
 
-  const restTime = () => {
+  const restTime = (minutes,seconds) => {
     if (sessionD25.classList.contains('selected')) {
-      updateDisplay(5, 0);
+      updateDisplay(0, 32);
     } else if (sessionD45.classList.contains('selected')) {
       updateDisplay(10, 0);
     } else {
@@ -64,6 +69,7 @@ export default function Timer({
     }
 
     counter();
+
   };
 
   const timeBarFill = () => {
