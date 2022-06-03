@@ -109,6 +109,15 @@ main {
   font-weight: bolder;
 }
 
+.aplication-tabs .tabs.turnOffSound {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  color: black;
+  background-color: transparent;
+  font-weight: bolder;
+}
+
 .main-tabs {
   width: 22rem;
   height: 3.4rem;
@@ -344,7 +353,6 @@ input[type='range']::-webkit-slider-thumb {
   transition: background 1s ease;
   opacity: 1;
 }
-
 
 @keyframes counter-status {
   0% {

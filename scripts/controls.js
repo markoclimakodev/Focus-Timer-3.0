@@ -76,7 +76,6 @@ export default function Controls({
     rainBtn.classList.remove('selected');
     coffeeshopBtn.classList.add('selected');
     fireBtn.classList.remove('selected');
-
   };
 
   const fireSound = () => {
@@ -84,6 +83,13 @@ export default function Controls({
     rainBtn.classList.remove('selected');
     coffeeshopBtn.classList.remove('selected');
     fireBtn.classList.add('selected');
+  };
+
+  const soundOff = () => {
+    treeBtn.classList.remove('selected');
+    rainBtn.classList.remove('selected');
+    coffeeshopBtn.classList.remove('selected');
+    fireBtn.classList.remove('selected');
   };
 
   return {
@@ -97,6 +103,7 @@ export default function Controls({
     forestSound,
     rainSound,
     coffeeshopSound,
-    fireSound
+    fireSound,
+    soundOff
   };
 }

@@ -2,6 +2,7 @@ import {
   body,
   switchBtn,
   view,
+  turnOffSound,
   playBtn,
   pauseBtn,
   stopBtn,
@@ -147,3 +148,11 @@ fireBtn.addEventListener('click', () => {
   sounds.buttonClickSound()
 
 });
+
+turnOffSound.addEventListener('click',()=> {
+  controls.soundOff();
+  sounds.forest.pause();
+  sounds.rain.pause();
+  sounds.coffeeShop.pause();
+  sounds.fireplace.pause();
+})

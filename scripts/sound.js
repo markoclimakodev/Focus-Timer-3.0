@@ -50,6 +50,8 @@ export default function Sounds() {
     coffeeShop.volume = coffeeShopVolume;
   };
 
+ 
+
   return {
     buttonClickSound,
     sessionCompleted,
