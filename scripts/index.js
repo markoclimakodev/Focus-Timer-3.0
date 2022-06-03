@@ -54,37 +54,52 @@ playBtn.addEventListener('click', () => {
   controls.play();
   timer.counter();
   timer.timeBarFill();
+  sounds.buttonClickSound()
 });
 
 pauseBtn.addEventListener('click', () => {
   controls.pause();
   timer.pauseCounter();
+  sounds.buttonClickSound()
+
 });
 
 stopBtn.addEventListener('click', () => {
   controls.resetControls();
   timer.resetCounter();
   timer.resetSession();
+  sounds.buttonClickSound()
+
 });
 
 sessionD25.addEventListener('click', () => {
   controls.session25();
+  sounds.buttonClickSound()
+
 });
 
 sessionD45.addEventListener('click', () => {
   controls.session45();
+  sounds.buttonClickSound()
+
 });
 
 sessionD60.addEventListener('click', () => {
   controls.session60();
+  sounds.buttonClickSound()
+
 });
 
 switchBtn.addEventListener('click', () => {
   SwitchTheme({ body, switchBtn });
+  sounds.buttonClickSound()
+
 });
 
 view.addEventListener('click', () => {
   View({ body });
+  sounds.buttonClickSound()
+
 });
 
 treeBtn.addEventListener('click', () => {
@@ -94,6 +109,8 @@ treeBtn.addEventListener('click', () => {
   sounds.coffeeShop.pause();
   sounds.fireplace.pause();
   sounds.forestVolumeControlBtn();
+  sounds.buttonClickSound()
+
 });
 
 rainBtn.addEventListener('click', () => {
@@ -103,6 +120,8 @@ rainBtn.addEventListener('click', () => {
   sounds.coffeeShop.pause();
   sounds.fireplace.pause();
   sounds.rainVolumeControlBtn();
+  sounds.buttonClickSound()
+
 });
 
 coffeeshopBtn.addEventListener('click', () => {
@@ -112,6 +131,8 @@ coffeeshopBtn.addEventListener('click', () => {
   sounds.coffeeShop.play();
   sounds.fireplace.pause();
   sounds.coffeeShopeVolumeControlBtn();
+  sounds.buttonClickSound()
+
 });
 
 fireBtn.addEventListener('click', () => {
@@ -121,4 +142,6 @@ fireBtn.addEventListener('click', () => {
   sounds.coffeeShop.pause();
   sounds.fireplace.play();
   sounds.fireplaceVolumeControlBtn();
+  sounds.buttonClickSound()
+
 });
