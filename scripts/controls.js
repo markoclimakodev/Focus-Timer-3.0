@@ -34,7 +34,7 @@ export default function Controls({
   };
 
   const session25 = () => {
-    updateDisplay(0, 32);
+    updateDisplay(25, 0);
     sessionD25.classList.add('selected');
     sessionD45.classList.remove('selected');
     sessionD60.classList.remove('selected');

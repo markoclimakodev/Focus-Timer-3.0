@@ -59,9 +59,9 @@ export default function Timer({
     }, 1000);
   };
 
-  const restTime = (minutes,seconds) => {
+  const restTime = () => {
     if (sessionD25.classList.contains('selected')) {
-      updateDisplay(0, 32);
+      updateDisplay(5, 0);
     } else if (sessionD45.classList.contains('selected')) {
       updateDisplay(10, 0);
     } else {
