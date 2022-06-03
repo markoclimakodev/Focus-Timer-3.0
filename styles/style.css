@@ -189,7 +189,7 @@ main {
 .time-bar {
   width: 41.5rem;
   height: 2.1rem;
-  border: 0.2 rem solid hsla(0, 6%, 53%, 0.7);
+  border: 0.2rem solid var(--button-lightmode-color);
 
   background: transparent;
   transition: all 1s ease;
