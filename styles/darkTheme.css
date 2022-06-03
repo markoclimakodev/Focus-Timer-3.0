@@ -23,6 +23,7 @@ body.dark .theme-card {
   background-color: var(--main-darkmode-bg);
   transition: background-color 1s ease;
 }
+
 body.dark .main-content {
   box-shadow: rgba(15, 43, 255, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -65,5 +66,5 @@ body.dark .cards.selected input[type='range'],
 body.dark .cards.selected input[type='range']::-webkit-slider-runnable-track,
 body.dark .cards.selected input[type='range']::-webkit-slider-thumb {
   background-color: var(--button-darkmode-icon-selected);
-  transition: background 1s ease;
+  transition: background-color 1s ease;
 }

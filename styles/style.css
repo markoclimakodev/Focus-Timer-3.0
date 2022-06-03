@@ -13,8 +13,6 @@
   --button-darkmode-color: hsla(216, 10%, 90%, 1);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
   --cards-color-bg-dark: hsla(240, 3%, 20%, 0.7);
-
-  transition: all 1s ease;
 }
 
 * {
@@ -122,7 +120,6 @@ main {
   height: 3.4rem;
   display: flex;
   gap: 1rem;
-  transition: background-image 1s ease;
 }
 
 .tabs {
@@ -151,7 +148,7 @@ main {
 
 .main-content {
   background: var(--main-lightmode-bg);
-  transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease;
 
   width: 100%;
   height: 54.9rem;
