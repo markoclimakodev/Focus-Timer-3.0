@@ -74,7 +74,6 @@ main {
   display: none;
 }
 
-
 .main-content {
   display: flex;
   flex-direction: column;
@@ -111,8 +110,20 @@ main {
 .fill {
   background-color: #224fee;
   height: 100%;
-  width: 50%;
+  width: 0%;
   border-radius: 0.5em;
+}
+
+.fill.d25 {
+  animation: counter-status 1500s ease;
+}
+
+.fill.d45 {
+  animation: counter-status 2700s ease;
+}
+
+.fill.d60 {
+  animation: counter-status 3600s ease;
 }
 
 .hide {
@@ -164,7 +175,6 @@ main {
   width: 100%;
   padding: 1em;
   position: relative;
-
 }
 
 .cards {
