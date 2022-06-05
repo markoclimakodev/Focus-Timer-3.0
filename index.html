@@ -116,8 +116,8 @@
         </section>
 
         <section class="slidecontainer">
-          <img src="src/images/buttons/volume-mute.svg" alt="">
-          <input type="range" name="fire" class="slider fire-volume" value="50" >
+          <span id="rangeValue">50</span>
+          <Input class="range" type="range"  value="50" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
         </section>
 
         <span class="turnOffSound">Sound Off </span>
@@ -125,5 +125,10 @@
       </section>
     </main>
     <script src="./scripts/index.js" type="module"></script>
+    <script>
+        function rangeSlide(value) {
+            document.getElementById('rangeValue').innerHTML = value;
+        }
+    </script>
   </body>
 </html>

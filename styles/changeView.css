@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 4em;
-    padding: 6.72em 2.5em;
+    padding: 5em;
   }
 
   body.viewTwo .timer {
@@ -40,20 +40,5 @@
     grid-area: D;
   }
 
-  body.viewTwo .slidecontainer {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-    width: 30%; 
-    height: 1em;
-    transform: rotate(270deg);
-    position: absolute;
-    right: -6em;
-    top: 17em;
-  }
 
-  body.viewTwo .slidecontainer  img {
-    transform: rotate(90deg);
-
-  }
 }

@@ -32,7 +32,7 @@ body {
   width: 100%;
   height: 100%;
 
-  padding: 1em;
+  padding: 0.8em;
   color: var(--button-lightmode-color);
 }
 
@@ -43,16 +43,14 @@ body {
   width: 3em;
   border-radius: 0.4em;
   font-size: 1em;
-  filter: drop-shadow(2px 1px 6px #3500FF);
-  
+  filter: drop-shadow(2px 1px 6px #3500ff);
 }
 
 main {
   display: flex;
   flex-direction: column;
   width: clamp(330px, 100%, 1014px);
-  margin: 8em auto;
-
+  margin: 7.5em auto;
 }
 
 .aplication-tabs {
@@ -71,7 +69,6 @@ main {
   padding: 0.5em;
   border-radius: 0.5em 0.5em 0 0;
   cursor: pointer;
-
 }
 
 .view {
@@ -83,15 +80,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3.2em;
+  gap: 3.3em;
   background-color: var(--main-lightmode-bg);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 0 0.5em 0.5em 0.5em;
   width: clamp(20em, 100%, 65em);
 
   position: relative;
-  padding: 1em;
-
+  padding: 0.5em;
 }
 
 .timer {
@@ -148,11 +144,11 @@ main {
 .controls-container img {
   width: clamp(1.5em, 1.5em + 1.5vw, 2.37em);
   cursor: pointer;
-
 }
 
 .controls-container img.selected {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%) hue-rotate(221deg) brightness(95%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%)
+    hue-rotate(221deg) brightness(95%) contrast(97%);
 }
 
 .controls-container p {
@@ -198,13 +194,14 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1em;
   background-color: var(--cards-color-bg-light);
   border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding: 0.5em;
 
   cursor: pointer;
-
+  margin-bottom: 0.5em;
 }
 
 .cards.selected {
@@ -218,6 +215,7 @@ main {
 .cards.selected img {
   filter: invert(1);
 }
+
 .turnOffSound {
   position: absolute;
   bottom: 0.5em;
@@ -226,56 +224,51 @@ main {
   background-color: none;
   font-weight: bolder;
   cursor: pointer;
-
 }
 
 .slidecontainer {
+  width: 8em;
   display: flex;
   align-items: center;
   gap: 0.5em;
-  width: 50%; /* Width of the outside container */
- height: 1em; 
+  position: absolute;
+  bottom: 0.5em;
+  right: 6em;
 }
 
-.slidecontainer  img {
-  width: clamp(1.5em, 1.5em + 1.5vw, 2.37em);
-}
 
-/* The slider itself */
-.slider {
-  -webkit-appearance: none;  /* Override default CSS styles */
-  appearance: none;
-  width: 100%; /* Full-width */
-  height: 20%; /* Specified height */
-  background: var(--button-lightmode-color); /* Grey background */
-  outline: none; /* Remove outline */
-  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
-  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-  transition: opacity .2s;
-
-}
-
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-  cursor: pointer;
-
-}
-
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
-.slider::-webkit-slider-thumb,.slider::-moz-range-thumb {
+input[type='range'] {
   -webkit-appearance: none;
-  appearance: none;
-  width: 1em; 
-  height: 1em; 
-  background: var(--button-color-selected); 
-  cursor: pointer;
+  background: none;
+  width: 80%;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background: var(--button-lightmode-color);
+  border: none;
+  border-radius: 0.5em;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
 
+  background: var(--button-color-selected);
+  margin-top: -4px;
 }
 
+input[type='range']:focus {
+  outline: none;
+}
 
-
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: var(--button-lightmode-color);
+}
 @keyframes counter-status {
   0% {
     width: 0%;
@@ -310,6 +303,19 @@ main {
     right: 0.5em;
   }
 
+  .slidecontainer {
+    width: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    position: absolute;
+    bottom: 6em;
+    right: -2em;
+    transform: rotate(270deg);
+  }
+  .slidecontainer span {
+    transform: rotate(90deg);
   
+  }
 }
-
