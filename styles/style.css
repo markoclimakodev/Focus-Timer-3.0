@@ -87,7 +87,9 @@ main {
   width: clamp(20em, 100%, 65em);
 
   position: relative;
-  padding: 0.5em;
+  padding: 0.5em 1em 2em;
+
+  border: 1px solid red;
 }
 
 .timer {
