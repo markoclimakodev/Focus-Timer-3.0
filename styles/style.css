@@ -84,6 +84,7 @@ main {
   width: 100%;
   width: clamp(20em, 100%, 65em);
 
+  position: relative;
   padding: 1em;
 }
 
@@ -174,7 +175,6 @@ main {
   gap: 1em;
   width: 100%;
   padding: 1em;
-  position: relative;
 }
 
 .cards {
@@ -190,14 +190,15 @@ main {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 0.5em;
 }
+
 .cards img {
   width: clamp(2em, 3em + 1vw, 6em);
 }
 
 .turnOffSound {
   position: absolute;
-  bottom: 0em;
-  right: 0em;
+  bottom: 0.5em;
+  right: 0.5em;
   width: fit-content;
   background-color: none;
   font-weight: bolder;
@@ -232,12 +233,22 @@ main {
     transition: all 1s ease;
   }
 }
+
 @media (min-width: 1208px) {
   body {
     background-image: url('../src/images/themes/lightmode/1208x720.jpg');
     background-size: cover;
     transition: all 1s ease;
   }
+
+  .view {
+    display: flex;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+  }
+
+
 }
 @media (min-width: 1440px) {
   body {
