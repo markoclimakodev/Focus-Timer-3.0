@@ -1,20 +1,11 @@
 body.dark {
-  background-image: url('../src/images/themes/darkmode/1920×1080.jpg');
-  transition: background-image 1s ease;
+  background-image: url('../src/images/themes/darkmode/800x1280.jpg');
+  transition: all 1s ease;
+  color: var(--button-darkmode-color);
 }
 
-body.dark svg path {
-  fill: var(--button-darkmode-color);
-  transition: fill 1s ease;
-}
-
-body.dark svg.switch path {
-  fill: #999999;
-  transition: fill 1s ease;
-}
-
-body.dark svg.switch path.body {
-  fill: #8e7f7f;
+body.dark img {
+  filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%) hue-rotate(175deg) brightness(95%) contrast(90%);
 }
 
 body.dark .tabs,
@@ -37,7 +28,6 @@ body.dark .time-bar {
 body.dark .tabs,
 body.dark .counter,
 body.dark .controls-container {
-  color: var(--button-darkmode-color);
   transition: all 1s ease;
 }
 
@@ -57,8 +47,8 @@ body.dark .cards.selected {
   transition: background 1s ease;
 }
 
-body.dark .cards.selected svg path {
-  fill: var(--button-darkmode-icon-selected);
+body.dark .cards.selected img {
+ filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%) hue-rotate(175deg) brightness(95%) contrast(90%);
   transition: fill 1s ease;
 }
 
@@ -68,3 +58,42 @@ body.dark .cards.selected input[type='range']::-webkit-slider-thumb {
   background-color: var(--button-darkmode-icon-selected);
   transition: background-color 1s ease;
 }
+
+@media (min-width: 800px) {
+  body.dark {
+    background-image: url('../src/images/themes/darkmode/800x1280.jpg');
+    background-size: cover;
+    transition: all 1s ease;
+  }
+}
+
+@media (min-width: 1280px) {
+  body.dark {
+    background-image: url('../src/images/themes/darkmode/1280×720.jpg');
+    background-size: cover;
+    transition: all 1s ease;
+  }
+}
+@media (min-width: 1440px) {
+  body.dark {
+    background-image: url('../src/images/themes/darkmode/1440×900.jpg');
+    background-size: cover;
+    transition: all 1s ease;
+  }
+}
+@media (min-width: 1536px) {
+  body.dark {
+    background-image: url('../src/images/themes/darkmode/1536×864.jpg');
+    background-size: cover;
+    transition: all 1s ease;
+  }
+}
+@media (min-width: 1920px) {
+  body.dark {
+    background-image: url('../src/images/themes/darkmode/1920×1080.jpg');
+    background-size: cover;
+    transition: all 1s ease;
+    margin: 8em auto;
+  }
+}
+

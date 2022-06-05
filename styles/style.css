@@ -8,7 +8,7 @@
   --cards-color-bg-light: hsla(253, 7%, 75%, 0.7);
 
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
-  --button-darkmode-color: hsla(216, 10%, 90%, 1);
+  --button-darkmode-color: rgb(208, 209, 210);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
   --cards-color-bg-dark: hsla(240, 3%, 20%, 0.7);
 }
@@ -40,9 +40,9 @@ body {
   position: fixed;
   right: 0.5em;
   top: 0.5em;
-  padding: 0.2em;
+  padding: 0.3em;
   background-color: var(--main-lightmode-bg);
-  border-radius: 0.2em;
+  border-radius: 0.4em;
   font-size: 1em;
 }
 
@@ -85,11 +85,10 @@ main {
   background-color: var(--main-lightmode-bg);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 0 0.5em 0.5em 0.5em;
-  width: 100%;
   width: clamp(20em, 100%, 65em);
 
   position: relative;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 .timer {
@@ -253,6 +252,8 @@ main {
     background-image: url('../src/images/themes/lightmode/800x1280.jpg');
     background-size: cover;
     transition: all 1s ease;
+    margin: 8em auto;
+
   }
 }
 
@@ -275,6 +276,7 @@ main {
     background-image: url('../src/images/themes/lightmode/1366x768.jpg');
     background-size: cover;
     transition: all 1s ease;
+
   }
 }
 @media (min-width: 1536px) {
@@ -289,6 +291,5 @@ main {
     background-image: url('../src/images/themes/lightmode/1920x1080.jpg');
     background-size: cover;
     transition: all 1s ease;
-    margin: 8em auto;
   }
 }
