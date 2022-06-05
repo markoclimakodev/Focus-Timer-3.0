@@ -50,7 +50,8 @@ main {
   display: flex;
   flex-direction: column;
   width: clamp(330px, 100%, 1014px);
-  margin: 0 auto;
+  margin: 8em auto;
+
 }
 
 .aplication-tabs {
@@ -89,6 +90,7 @@ main {
 
   position: relative;
   padding: 1.5em;
+
 }
 
 .timer {
@@ -248,7 +250,7 @@ main {
 }
 
 @media (min-width: 900px) {
-  body {
+  main {
     margin: 8em auto;
   }
 
