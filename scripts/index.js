@@ -53,6 +53,8 @@ const timer = Timer({
 });
 
 
+const theme = SwitchTheme({body,switchBtn})
+
 playBtn.addEventListener('click', () => {
   controls.play();
   timer.counter();
@@ -94,7 +96,8 @@ sessionD60.addEventListener('click', () => {
 });
 
 switchBtn.addEventListener('click', () => {
-  SwitchTheme({ body, switchBtn });
+  theme.themes();
+  theme.changeThemeName()
   sounds.buttonClickSound()
 
 });

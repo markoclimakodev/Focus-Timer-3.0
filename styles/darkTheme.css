@@ -4,13 +4,20 @@ body.dark {
   color: var(--button-darkmode-color);
 }
 
-body.dark img {
+body.dark .theme-card {
+  filter: drop-shadow(2px 1px 6px #FFE83C);
+}
+
+body.dark .main-content img {
   filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%) hue-rotate(175deg) brightness(95%) contrast(90%);
 }
 
+body.dark .controls-container img.selected {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%) hue-rotate(221deg) brightness(95%) contrast(97%);
+}
+
 body.dark .tabs,
-body.dark .main-content,
-body.dark .theme-card {
+body.dark .main-content{
   background-color: var(--main-darkmode-bg);
   transition: background-color 1s ease;
 }

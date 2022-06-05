@@ -10,7 +10,7 @@
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
   --button-darkmode-color: rgb(208, 209, 210);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
-  --cards-color-bg-dark: hsla(240, 3%, 20%, 0.7);
+  --cards-color-bg-dark: #313135b3;
 }
 
 * {
@@ -40,10 +40,11 @@ body {
   position: fixed;
   right: 0.5em;
   top: 0.5em;
-  padding: 0.3em;
-  background-color: var(--main-lightmode-bg);
+  width: 3em;
   border-radius: 0.4em;
   font-size: 1em;
+  filter: drop-shadow(2px 1px 6px #3500FF);
+  
 }
 
 main {
@@ -89,7 +90,7 @@ main {
   width: clamp(20em, 100%, 65em);
 
   position: relative;
-  padding: 1.5em;
+  padding: 1em;
 
 }
 
@@ -153,6 +154,7 @@ main {
 .controls-container img.selected {
   filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%) hue-rotate(221deg) brightness(95%) contrast(97%);
 }
+
 .controls-container p {
   width: 100%;
   text-align: center;
@@ -197,7 +199,7 @@ main {
   align-items: center;
   justify-content: center;
   background-color: var(--cards-color-bg-light);
-  border-radius: 0.5em;
+  border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding: 0.5em;
 
@@ -226,6 +228,53 @@ main {
   cursor: pointer;
 
 }
+
+.slidecontainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 50%; /* Width of the outside container */
+ height: 1em; 
+}
+
+.slidecontainer  img {
+  width: clamp(1.5em, 1.5em + 1.5vw, 2.37em);
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 20%; /* Specified height */
+  background: var(--button-lightmode-color); /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+  cursor: pointer;
+
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb,.slider::-moz-range-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1em; 
+  height: 1em; 
+  background: var(--button-color-selected); 
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+
 
 @keyframes counter-status {
   0% {
@@ -260,5 +309,7 @@ main {
     top: 0.5em;
     right: 0.5em;
   }
+
+  
 }
 

@@ -12,10 +12,10 @@ export default function Sounds() {
   const fireplace = new Audio('./src/sounds/Lareira.wav');
   const coffeeShop = new Audio('./src/sounds/Cafeteria.wav');
 
-  const forestVolumeControl = document.querySelector('#tree-volume');
-  const rainVolumeControl = document.querySelector('#rain-volume');
-  const fireplaceVolumeControl = document.querySelector('#fire-volume');
-  const coffeeShopVolumeControl = document.querySelector('#coffeeshop-volume');
+  const volumeControl = document.querySelector('.slider');
+  const rainVolumeControl = document.querySelector('.rain-volume');
+  const fireplaceVolumeControl = document.querySelector('.fire-volume');
+  const coffeeShopVolumeControl = document.querySelector('.coffeeshop-volume');
 
   forest.loop = true;
   rain.loop = true;
@@ -31,6 +31,8 @@ export default function Sounds() {
   };
 
   const forestVolumeControlBtn = () => {
+    volumeControl.classList.add('tree-volume');
+    const forestVolumeControl = document.querySelector('.tree-volume');
     let forestVolume = forestVolumeControl.value / 100;
     forest.volume = forestVolume;
   };
@@ -49,8 +51,6 @@ export default function Sounds() {
     let coffeeShopVolume = coffeeShopVolumeControl.value / 100;
     coffeeShop.volume = coffeeShopVolume;
   };
-
- 
 
   return {
     buttonClickSound,
