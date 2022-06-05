@@ -68,10 +68,13 @@ main {
   width: 50%;
   padding: 0.5em;
   border-radius: 0.5em 0.5em 0 0;
+  cursor: pointer;
+
 }
 
 .view {
   display: none;
+  cursor: pointer;
 }
 
 .main-content {
@@ -80,6 +83,7 @@ main {
   align-items: center;
   gap: 3.2em;
   background-color: var(--main-lightmode-bg);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 0 0.5em 0.5em 0.5em;
   width: 100%;
   width: clamp(20em, 100%, 65em);
@@ -104,15 +108,16 @@ main {
   width: clamp(10em, 100%, 35em);
   height: 1.2em;
   background-color: transparent;
-  border: 0.05em solid var(--button-lightmode-color);
-  border-radius: 0.5em;
+  border: 0.1em solid var(--button-lightmode-color);
+  border-radius: 0.4em;
+  padding: 0;
 }
 
 .fill {
   background-color: #224fee;
   height: 100%;
   width: 0%;
-  border-radius: 0.5em;
+  border-radius: 0.4em;
 }
 
 .fill.d25 {
@@ -140,8 +145,13 @@ main {
 
 .controls-container img {
   width: clamp(1.5em, 1.5em + 1.5vw, 2.37em);
+  cursor: pointer;
+
 }
 
+.controls-container img.selected {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%) hue-rotate(221deg) brightness(95%) contrast(97%);
+}
 .controls-container p {
   width: 100%;
   text-align: center;
@@ -187,14 +197,24 @@ main {
   justify-content: center;
   background-color: var(--cards-color-bg-light);
   border-radius: 0.5em;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding: 0.5em;
+
+  cursor: pointer;
+
+}
+
+.cards.selected {
+  background-color: var(--button-color-selected);
 }
 
 .cards img {
   width: clamp(2em, 3em + 1vw, 6em);
 }
 
+.cards.selected img {
+  filter: invert(1);
+}
 .turnOffSound {
   position: absolute;
   bottom: 0.5em;
@@ -202,6 +222,8 @@ main {
   width: fit-content;
   background-color: none;
   font-weight: bolder;
+  cursor: pointer;
+
 }
 
 @keyframes counter-status {
@@ -247,8 +269,6 @@ main {
     top: 0.5em;
     right: 0.5em;
   }
-
-
 }
 @media (min-width: 1440px) {
   body {
