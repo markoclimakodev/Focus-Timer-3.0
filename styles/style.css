@@ -74,6 +74,8 @@ main {
 .view {
   display: none;
   cursor: pointer;
+  font-weight: bolder;
+
 }
 
 .main-content {
