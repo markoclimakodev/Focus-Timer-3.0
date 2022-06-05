@@ -1,5 +1,5 @@
 body.dark {
-  background-image: url('../src/images/themes/darkmode/800x1280.jpg');
+  background-image: url('../src/images/themes/darkmode/1920×1080.jpg');
   transition: all 1s ease;
   color: var(--button-darkmode-color);
 }
@@ -57,43 +57,5 @@ body.dark .cards.selected input[type='range']::-webkit-slider-runnable-track,
 body.dark .cards.selected input[type='range']::-webkit-slider-thumb {
   background-color: var(--button-darkmode-icon-selected);
   transition: background-color 1s ease;
-}
-
-@media (min-width: 800px) {
-  body.dark {
-    background-image: url('../src/images/themes/darkmode/800x1280.jpg');
-    background-size: cover;
-    transition: all 1s ease;
-  }
-}
-
-@media (min-width: 1280px) {
-  body.dark {
-    background-image: url('../src/images/themes/darkmode/1280×720.jpg');
-    background-size: cover;
-    transition: all 1s ease;
-  }
-}
-@media (min-width: 1440px) {
-  body.dark {
-    background-image: url('../src/images/themes/darkmode/1440×900.jpg');
-    background-size: cover;
-    transition: all 1s ease;
-  }
-}
-@media (min-width: 1536px) {
-  body.dark {
-    background-image: url('../src/images/themes/darkmode/1536×864.jpg');
-    background-size: cover;
-    transition: all 1s ease;
-  }
-}
-@media (min-width: 1920px) {
-  body.dark {
-    background-image: url('../src/images/themes/darkmode/1920×1080.jpg');
-    background-size: cover;
-    transition: all 1s ease;
-    margin: 8em auto;
-  }
 }
 
