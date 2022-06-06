@@ -16,7 +16,6 @@ body.dark .controls-container img.selected {
   filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%) hue-rotate(221deg) brightness(95%) contrast(97%);
 }
 
-body.dark .tabs,
 body.dark .main-content{
   background-color: var(--main-darkmode-bg);
   transition: background-color 1s ease;
@@ -32,7 +31,6 @@ body.dark .time-bar {
   transition: all 1s ease;
 }
 
-body.dark .tabs,
 body.dark .counter,
 body.dark .controls-container {
   transition: all 1s ease;

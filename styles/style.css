@@ -53,25 +53,6 @@ main {
   margin: 7.5em auto;
 }
 
-.aplication-tabs {
-  width: 12em;
-}
-
-.main-tabs {
-  display: flex;
-  gap: 0.5em;
-  text-align: center;
-
-}
-
-.tabs {
-  background-color: var(--main-lightmode-bg);
-  width: 50%;
-  padding: 0.5em;
-  border-radius: 0.5em 0.5em 0 0;
-  cursor: pointer;
-}
-
 .view {
   display: none;
   cursor: pointer;
@@ -86,7 +67,7 @@ main {
   gap: 3.3em;
   background-color: var(--main-lightmode-bg);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border-radius: 0 0.5em 0.5em 0.5em;
+  border-radius:0.5em;
   width: clamp(20em, 100%, 65em);
 
   position: relative;
