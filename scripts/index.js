@@ -18,6 +18,7 @@ import {
   rainBtn,
   coffeeshopBtn,
   fireBtn,
+  
 } from './elements.js';
 import Sounds from './sound.js';
 import SwitchTheme from './switchThemes.js';

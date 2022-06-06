@@ -57,7 +57,6 @@ main {
   display: none;
   cursor: pointer;
   font-weight: bolder;
-
 }
 
 .main-content {
@@ -67,12 +66,11 @@ main {
   gap: 3.3em;
   background-color: var(--main-lightmode-bg);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border-radius:0.5em;
+  border-radius: 0.5em;
   width: clamp(20em, 100%, 65em);
 
   position: relative;
   padding: 0.5em 1em 2em;
-
 }
 
 .timer {
@@ -113,6 +111,12 @@ main {
 
 .fill.d60 {
   animation: counter-status 3600s ease;
+}
+
+.fill.d25.paused,
+.fill.d45.paused,
+.fill.d60.paused {
+  animation-play-state: paused;
 }
 
 .hide {
@@ -221,7 +225,6 @@ main {
   right: 6em;
 }
 
-
 input[type='range'] {
   -webkit-appearance: none;
   background: none;
@@ -306,6 +309,5 @@ input[type='range']:focus::-webkit-slider-runnable-track {
   }
   .slidecontainer span {
     transform: rotate(90deg);
-  
   }
 }

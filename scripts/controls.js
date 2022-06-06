@@ -10,11 +10,13 @@ export default function Controls({
   rainBtn,
   coffeeshopBtn,
   fireBtn,
+  fill
 }) {
   const play = () => {
     playBtn.classList.add('hide');
     pauseBtn.classList.remove('hide');
     pauseBtn.classList.add('selected');
+
   };
 
   const pause = () => {
@@ -34,7 +36,7 @@ export default function Controls({
   };
 
   const session25 = () => {
-    updateDisplay(25, 0);
+    updateDisplay(1, 0);
     sessionD25.classList.add('selected');
     sessionD45.classList.remove('selected');
     sessionD60.classList.remove('selected');

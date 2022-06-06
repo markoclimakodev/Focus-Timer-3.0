@@ -88,8 +88,19 @@ export default function Timer({
     timerBar.classList.remove('d60');
   };
 
+  const pauseAnimation = ()=> {
+    if (sessionD25.classList.contains('d25')) {
+      timerBar.classList.add('paused');
+    } else if (sessionD45.classList.contains('d45')) {
+      timerBar.classList.add('paused');
+    } else {
+      timerBar.classList.add('paused');
+    }
+  }
+
   const pauseCounter = () => {
     clearTimeout(timerTimeout);
+    pauseAnimation()
   };
 
   const resetCounter = () => {
