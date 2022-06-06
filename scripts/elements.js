@@ -6,6 +6,8 @@ const pomodoro = document.querySelector('.pomodoro');
 const todo = document.querySelector('.to-do');
 const view = document.querySelector('.view');
 const turnOffSound = document.querySelector('.turnOffSound');
+const range = document.querySelector('.range');
+
 
 const minutesDisplay = document.querySelector('.minutes');
 const secondsDisplay = document.querySelector('.seconds');
@@ -60,4 +62,5 @@ export {
   coffeeshopVolume,
   fireBtn,
   fireVolume,
+  range
 };

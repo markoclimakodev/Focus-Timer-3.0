@@ -12,11 +12,6 @@ export default function Sounds() {
   const fireplace = new Audio('./src/sounds/Lareira.wav');
   const coffeeShop = new Audio('./src/sounds/Cafeteria.wav');
 
-  const volumeControl = document.querySelector('.slider');
-  const rainVolumeControl = document.querySelector('.rain-volume');
-  const fireplaceVolumeControl = document.querySelector('.fire-volume');
-  const coffeeShopVolumeControl = document.querySelector('.coffeeshop-volume');
-
   forest.loop = true;
   rain.loop = true;
   fireplace.loop = true;
@@ -30,26 +25,22 @@ export default function Sounds() {
     timeEnd.play();
   };
 
-  const forestVolumeControlBtn = () => {
-    volumeControl.classList.add('tree-volume');
-    const forestVolumeControl = document.querySelector('.tree-volume');
-    let forestVolume = forestVolumeControl.value / 100;
-    forest.volume = forestVolume;
-  };
-
-  const rainVolumeControlBtn = () => {
-    let rainVolume = rainVolumeControl.value / 100;
-    rain.volume = rainVolume;
-  };
-
-  const fireplaceVolumeControlBtn = () => {
-    let fireplaceVolume = fireplaceVolumeControl.value / 100;
-    fireplace.volume = fireplaceVolume;
-  };
-
-  const coffeeShopeVolumeControlBtn = () => {
-    let coffeeShopVolume = coffeeShopVolumeControl.value / 100;
-    coffeeShop.volume = coffeeShopVolume;
+  const volumeControl = (range, currentSound) => {
+    switch (currentSound) {
+      case 'nature':
+        forest.volume = range.value / 100;
+        break;
+      case 'rain':
+        rain.volume = range.value /100;
+        break;
+      case 'coffeeshop':
+        coffeeShop.volume = range.value /100;
+        break;
+      case 'fire':
+        fireplace.volume = range.value /100;
+        break;
+        default: alert('Error')
+    }
   };
 
   return {
@@ -59,12 +50,9 @@ export default function Sounds() {
     rain,
     fireplace,
     coffeeShop,
-    forestVolumeControlBtn,
-    rainVolumeControlBtn,
-    fireplaceVolumeControlBtn,
-    coffeeShopeVolumeControlBtn,
     thirtySeconds,
     sessionRoundCompleted,
     breaktime,
+    volumeControl,
   };
 }

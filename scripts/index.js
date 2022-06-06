@@ -3,6 +3,7 @@ import {
   switchBtn,
   view,
   turnOffSound,
+  range,
   playBtn,
   pauseBtn,
   stopBtn,
@@ -23,6 +24,8 @@ import SwitchTheme from './switchThemes.js';
 import View from './handleView.js';
 import Controls from './controls.js';
 import Timer from './timer.js';
+
+let currentSound;
 
 const sounds = Sounds();
 
@@ -49,63 +52,55 @@ const timer = Timer({
   sessionD45,
   timerBar,
   currentSession,
-  sounds
+  sounds,
 });
 
-
-const theme = SwitchTheme({body,switchBtn})
+const theme = SwitchTheme({ body, switchBtn });
 
 playBtn.addEventListener('click', () => {
   controls.play();
   timer.counter();
   timer.timeBarFill();
-  sounds.buttonClickSound()
+  sounds.buttonClickSound();
 });
 
 pauseBtn.addEventListener('click', () => {
   controls.pause();
   timer.pauseCounter();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
 });
 
 stopBtn.addEventListener('click', () => {
   controls.resetControls();
   timer.resetCounter();
   timer.resetSession();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
 });
 
 sessionD25.addEventListener('click', () => {
   controls.session25();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
 });
 
 sessionD45.addEventListener('click', () => {
   controls.session45();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
 });
 
 sessionD60.addEventListener('click', () => {
   controls.session60();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
 });
 
 switchBtn.addEventListener('click', () => {
   theme.themes();
-  theme.changeThemeName()
-  sounds.buttonClickSound()
-
+  theme.changeThemeName();
+  sounds.buttonClickSound();
 });
 
 view.addEventListener('click', () => {
   View({ body });
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
 });
 
 treeBtn.addEventListener('click', () => {
@@ -114,9 +109,10 @@ treeBtn.addEventListener('click', () => {
   sounds.rain.pause();
   sounds.coffeeShop.pause();
   sounds.fireplace.pause();
-  sounds.forestVolumeControlBtn();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
+  currentSound = 'nature';
+  range.value = 50;
+  sounds.volumeControl(range, currentSound);
 });
 
 rainBtn.addEventListener('click', () => {
@@ -125,9 +121,10 @@ rainBtn.addEventListener('click', () => {
   sounds.rain.play();
   sounds.coffeeShop.pause();
   sounds.fireplace.pause();
-  sounds.rainVolumeControlBtn();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
+  currentSound = 'rain';
+  range.value = 50;
+  sounds.volumeControl(range, currentSound);
 });
 
 coffeeshopBtn.addEventListener('click', () => {
@@ -136,9 +133,10 @@ coffeeshopBtn.addEventListener('click', () => {
   sounds.rain.pause();
   sounds.coffeeShop.play();
   sounds.fireplace.pause();
-  sounds.coffeeShopeVolumeControlBtn();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
+  currentSound = 'coffeeshop';
+  range.value = 50;
+  sounds.volumeControl(range, currentSound);
 });
 
 fireBtn.addEventListener('click', () => {
@@ -147,15 +145,20 @@ fireBtn.addEventListener('click', () => {
   sounds.rain.pause();
   sounds.coffeeShop.pause();
   sounds.fireplace.play();
-  sounds.fireplaceVolumeControlBtn();
-  sounds.buttonClickSound()
-
+  sounds.buttonClickSound();
+  currentSound = 'fire';
+  range.value = 50;
+  sounds.volumeControl(range, currentSound);
 });
 
-turnOffSound.addEventListener('click',()=> {
+turnOffSound.addEventListener('click', () => {
   controls.soundOff();
   sounds.forest.pause();
   sounds.rain.pause();
   sounds.coffeeShop.pause();
   sounds.fireplace.pause();
-})
+});
+
+range.addEventListener('change', () => {
+  sounds.volumeControl(range, currentSound);
+});
