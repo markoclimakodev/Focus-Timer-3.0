@@ -10,7 +10,6 @@ export default function Controls({
   rainBtn,
   coffeeshopBtn,
   fireBtn,
-  fill
 }) {
   const play = () => {
     playBtn.classList.add('hide');

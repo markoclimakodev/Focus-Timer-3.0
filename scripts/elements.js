@@ -26,15 +26,9 @@ const sessionD45 = document.querySelector('.d45');
 const sessionD60 = document.querySelector('.d60');
 
 const treeBtn = document.querySelector('.tree');
-const treeVolume = document.querySelector('#tree-volume');
-
 const rainBtn = document.querySelector('.rain');
-const rainVolume = document.querySelector('#rain-volume');
 const coffeeshopBtn = document.querySelector('.coffeeshop');
-const coffeeshopVolume = document.querySelector('#coffeeshop-volume');
-
 const fireBtn = document.querySelector('.fire');
-const fireVolume = document.querySelector('#fire-volume');
 
 export {
   body,
@@ -55,12 +49,8 @@ export {
   sessionD45,
   sessionD60,
   treeBtn,
-  treeVolume,
   rainBtn,
-  rainVolume,
   coffeeshopBtn,
-  coffeeshopVolume,
   fireBtn,
-  fireVolume,
   range
 };
