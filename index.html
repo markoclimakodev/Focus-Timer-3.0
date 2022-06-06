@@ -20,14 +20,14 @@
 
   <body>
     <div class="theme-card">
-      <img src="src/images/buttons/moon.svg" class="switch"/>
+      <img src="src/images/buttons/moon.svg" class="switch" />
     </div>
 
     <main>
       <section class="aplication-tabs">
         <div class="main-tabs">
           <span class="pomodoro selected tabs"> Pomodoro </span>
-          <span class="to-do tabs">Tarefas</span>
+          <span class="to-do tabs">Tasks</span>
         </div>
       </section>
       <section class="main-content">
@@ -88,47 +88,37 @@
             <label for="tree-volume" class="hide">
               Volume som de natureza</label
             >
-            <!-- <input type="range" name="tree" id="tree-volume" value="50" /> -->
           </section>
           <section class="cards rain">
             <img src="src/images/buttons/rain.svg" alt="" />
             <label for="rain-volume" class="hide">Volume som de chuva</label>
-            <!-- <input type="range" name="rain" id="rain-volume" value="50" /> -->
           </section>
           <section class="cards coffeeshop">
             <img src="src/images/buttons/coffeshop.svg" alt="" />
             <label for="coffeeshop-volume" class="hide">
               Volume som de cafeteria</label
             >
-            <!-- <input
-              type="range"
-              name="coffeeshop"
-              id="coffeeshop-volume"
-              value="50"
-            /> -->
           </section>
           <section class="cards fire">
             <img src="src/images/buttons/fire.svg" alt="" srcset="" />
             <label for="fire-volume" class="hide"> Volume som de fogo</label>
-            <!-- <input type="range" name="fire" id="fire-volume" value="50" /> -->
           </section>
-
         </section>
 
         <section class="slidecontainer">
           <span id="rangeValue">50</span>
-          <Input class="range" type="range"  value="50" min="0" max="100" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+          <input class="range" type="range" value="50" min="0" max="100" />
         </section>
 
         <span class="turnOffSound">Sound Off </span>
-
       </section>
     </main>
     <script src="./scripts/index.js" type="module"></script>
     <script>
-        function rangeSlide(value) {
-            document.getElementById('rangeValue').innerHTML = value;
-        }
+      // onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"
+      //   function rangeSlide(value) {
+      //       document.getElementById('rangeValue').innerHTML = value;
+      //   }
     </script>
   </body>
 </html>

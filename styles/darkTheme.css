@@ -27,7 +27,7 @@ body.dark .main-content {
 }
 
 body.dark .time-bar {
-  border: 0.2rem solid var(--button-darkmode-color);
+  border: 0.1rem solid var(--button-darkmode-color);
   background-color: transparent;
   transition: all 1s ease;
 }

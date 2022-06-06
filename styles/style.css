@@ -43,7 +43,7 @@ body {
   width: 3em;
   border-radius: 0.4em;
   font-size: 1em;
-  filter: drop-shadow(2px 1px 6px #3500ff);
+  filter: drop-shadow(2px 1px 6px #000000);
 }
 
 main {
@@ -61,6 +61,7 @@ main {
   display: flex;
   gap: 0.5em;
   text-align: center;
+
 }
 
 .tabs {
@@ -235,7 +236,7 @@ main {
   align-items: center;
   gap: 0.5em;
   position: absolute;
-  bottom: 0.5em;
+  bottom: 0.2em;
   right: 6em;
 }
 
@@ -272,6 +273,11 @@ input[type='range']:focus {
 input[type='range']:focus::-webkit-slider-runnable-track {
   background: var(--button-lightmode-color);
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 @keyframes counter-status {
   0% {
     width: 0%;
