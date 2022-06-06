@@ -18,7 +18,6 @@ import {
   rainBtn,
   coffeeshopBtn,
   fireBtn,
-  
 } from './elements.js';
 import Sounds from './sound.js';
 import SwitchTheme from './switchThemes.js';
@@ -106,58 +105,43 @@ view.addEventListener('click', () => {
 
 treeBtn.addEventListener('click', () => {
   controls.forestSound();
-  sounds.forest.play();
-  sounds.rain.pause();
-  sounds.coffeeShop.pause();
-  sounds.fireplace.pause();
-  sounds.buttonClickSound();
   currentSound = 'nature';
+  sounds.playSound(currentSound);
+  sounds.buttonClickSound();
   range.value = 50;
   sounds.volumeControl(range, currentSound);
 });
 
 rainBtn.addEventListener('click', () => {
   controls.rainSound();
-  sounds.forest.pause();
-  sounds.rain.play();
-  sounds.coffeeShop.pause();
-  sounds.fireplace.pause();
-  sounds.buttonClickSound();
   currentSound = 'rain';
+  sounds.playSound(currentSound);
+  sounds.buttonClickSound();
   range.value = 50;
   sounds.volumeControl(range, currentSound);
 });
 
 coffeeshopBtn.addEventListener('click', () => {
   controls.coffeeshopSound();
-  sounds.forest.pause();
-  sounds.rain.pause();
-  sounds.coffeeShop.play();
-  sounds.fireplace.pause();
-  sounds.buttonClickSound();
   currentSound = 'coffeeshop';
+  sounds.playSound(currentSound);
+  sounds.buttonClickSound();
   range.value = 50;
   sounds.volumeControl(range, currentSound);
 });
 
 fireBtn.addEventListener('click', () => {
   controls.fireSound();
-  sounds.forest.pause();
-  sounds.rain.pause();
-  sounds.coffeeShop.pause();
-  sounds.fireplace.play();
-  sounds.buttonClickSound();
   currentSound = 'fire';
+  sounds.playSound(currentSound);
+  sounds.buttonClickSound();
   range.value = 50;
   sounds.volumeControl(range, currentSound);
 });
 
 turnOffSound.addEventListener('click', () => {
   controls.soundOff();
-  sounds.forest.pause();
-  sounds.rain.pause();
-  sounds.coffeeShop.pause();
-  sounds.fireplace.pause();
+  sounds.stopSound()
 });
 
 range.addEventListener('change', () => {

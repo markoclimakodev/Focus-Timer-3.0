@@ -25,21 +25,60 @@ export default function Sounds() {
     timeEnd.play();
   };
 
+  const playSound = (currentSound) => {
+    switch (currentSound) {
+      case 'nature':
+        forest.play();
+        rain.pause();
+        coffeeShop.pause();
+        fireplace.pause();
+        break;
+      case 'rain':
+        forest.pause();
+        rain.play();
+        coffeeShop.pause();
+        fireplace.pause();
+        break;
+      case 'coffeeshop':
+        forest.pause();
+        rain.pause();
+        coffeeShop.play();
+        fireplace.pause();
+        break;
+      case 'fire':
+        forest.pause();
+        rain.pause();
+        coffeeShop.pause();
+        fireplace.play();
+        break;
+      default:
+        '';
+    }
+  };
+
+  const stopSound = () => {
+    forest.pause();
+    rain.pause();
+    coffeeShop.pause();
+    fireplace.pause();
+  };
+
   const volumeControl = (range, currentSound) => {
     switch (currentSound) {
       case 'nature':
         forest.volume = range.value / 100;
         break;
       case 'rain':
-        rain.volume = range.value /100;
+        rain.volume = range.value / 100;
         break;
       case 'coffeeshop':
-        coffeeShop.volume = range.value /100;
+        coffeeShop.volume = range.value / 100;
         break;
       case 'fire':
-        fireplace.volume = range.value /100;
+        fireplace.volume = range.value / 100;
         break;
-        default: alert('Error')
+      default:
+        '';
     }
   };
 
@@ -54,5 +93,7 @@ export default function Sounds() {
     sessionRoundCompleted,
     breaktime,
     volumeControl,
+    playSound,
+    stopSound
   };
 }
