@@ -6,7 +6,7 @@ export default function Timer({
   sessionD25,
   sessionD45,
   timerBar,
-  sounds
+  sounds,
 }) {
   let timerTimeout;
   let round = new Boolean(false);
@@ -33,8 +33,8 @@ export default function Timer({
 
       updateDisplay(minutes, 0);
 
-      if(minutes == '00' && seconds == '30') {
-        sounds.thirtySeconds.play()
+      if (minutes == '00' && seconds == '30') {
+        sounds.thirtySeconds.play();
       }
 
       if (isFinished) {
@@ -69,7 +69,6 @@ export default function Timer({
     }
 
     counter();
-
   };
 
   const timeBarFill = () => {
@@ -88,7 +87,7 @@ export default function Timer({
     timerBar.classList.remove('d60');
   };
 
-  const pauseAnimation = ()=> {
+  const pauseAnimation = () => {
     if (sessionD25.classList.contains('d25')) {
       timerBar.classList.add('paused');
     } else if (sessionD45.classList.contains('d45')) {
@@ -96,11 +95,11 @@ export default function Timer({
     } else {
       timerBar.classList.add('paused');
     }
-  }
+  };
 
   const pauseCounter = () => {
     clearTimeout(timerTimeout);
-    pauseAnimation()
+    pauseAnimation();
   };
 
   const resetCounter = () => {

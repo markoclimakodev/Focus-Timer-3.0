@@ -4,17 +4,20 @@ const Events = ({
   sounds,
   theme,
   range,
+  view,
   turnOffSound,
   playBtn,
   pauseBtn,
   stopBtn,
   currentSound,
   switchBtn,
-  sessionD25,sessionD45,sessionD60,treeBtn,
+  sessionD25,
+  sessionD45,
+  sessionD60,
+  treeBtn,
   rainBtn,
   coffeeshopBtn,
   fireBtn,
-  body
 }) => {
   playBtn.addEventListener('click', () => {
     controls.play();
@@ -57,10 +60,10 @@ const Events = ({
     sounds.buttonClickSound();
   });
 
-//   view.addEventListener('click', () => {
-//     Views({body});
-//     sounds.buttonClickSound();
-//   });
+  view.addEventListener('click', () => {
+    controls.changeView();
+    sounds.buttonClickSound();
+  });
 
   treeBtn.addEventListener('click', () => {
     controls.forestSound();

@@ -2,12 +2,9 @@ const body = document.querySelector('body');
 
 const switchBtn = document.querySelector('.switch');
 
-const pomodoro = document.querySelector('.pomodoro');
-const todo = document.querySelector('.to-do');
 const view = document.querySelector('.view');
 const turnOffSound = document.querySelector('.turnOffSound');
 const range = document.querySelector('.range');
-
 
 const minutesDisplay = document.querySelector('.minutes');
 const secondsDisplay = document.querySelector('.seconds');
@@ -33,8 +30,6 @@ const fireBtn = document.querySelector('.fire');
 export {
   body,
   switchBtn,
-  pomodoro,
-  todo,
   view,
   turnOffSound,
   minutesDisplay,
@@ -52,5 +47,5 @@ export {
   rainBtn,
   coffeeshopBtn,
   fireBtn,
-  range
+  range,
 };

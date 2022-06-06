@@ -1,35 +1,36 @@
 import {
   body,
   switchBtn,
+  view,
   turnOffSound,
-  range,
+  minutesDisplay,
+  secondsDisplay,
+  timerBar,
+  currentSession,
   playBtn,
   pauseBtn,
   stopBtn,
-  minutesDisplay,
-  secondsDisplay,
   sessionD25,
   sessionD45,
   sessionD60,
-  timerBar,
-  currentSession,
   treeBtn,
   rainBtn,
   coffeeshopBtn,
   fireBtn,
+  range,
 } from './elements.js';
 import Sounds from './sound.js';
 import SwitchTheme from './switchThemes.js';
-// import View from './handleView.js';
 import Controls from './controls.js';
 import Timer from './timer.js';
-import Events from './events.js'
+import Events from './events.js';
 
 let currentSound;
 
 const sounds = Sounds();
 
 const controls = Controls({
+  body,
   playBtn,
   pauseBtn,
   minutesDisplay,
@@ -57,9 +58,24 @@ const timer = Timer({
 
 const theme = SwitchTheme({ body });
 
-
-
-Events({controls,timer,sounds,theme,range,turnOffSound,playBtn,pauseBtn,stopBtn,currentSound,switchBtn,  sessionD25,sessionD45,sessionD60,treeBtn,
+Events({
+  controls,
+  timer,
+  sounds,
+  theme,
+  range,
+  view,
+  turnOffSound,
+  playBtn,
+  pauseBtn,
+  stopBtn,
+  currentSound,
+  switchBtn,
+  sessionD25,
+  sessionD45,
+  sessionD60,
+  treeBtn,
   rainBtn,
   coffeeshopBtn,
-  fireBtn,})
+  fireBtn,
+});

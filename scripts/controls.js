@@ -1,4 +1,5 @@
 export default function Controls({
+  body,
   playBtn,
   pauseBtn,
   minutesDisplay,
@@ -15,7 +16,6 @@ export default function Controls({
     playBtn.classList.add('hide');
     pauseBtn.classList.remove('hide');
     pauseBtn.classList.add('selected');
-
   };
 
   const pause = () => {
@@ -93,6 +93,10 @@ export default function Controls({
     fireBtn.classList.remove('selected');
   };
 
+  const changeView = () => {
+    body.classList.toggle('viewTwo');
+  };
+
   return {
     play,
     pause,
@@ -105,6 +109,7 @@ export default function Controls({
     rainSound,
     coffeeshopSound,
     fireSound,
-    soundOff
+    soundOff,
+    changeView,
   };
 }
