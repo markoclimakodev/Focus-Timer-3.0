@@ -82,6 +82,10 @@ export default function Sounds() {
     }
   };
 
+  const rangeSlide =(range)=> {
+    document.getElementById('rangeValue').innerHTML = range.value;
+}
+
   return {
     buttonClickSound,
     sessionCompleted,
@@ -94,6 +98,7 @@ export default function Sounds() {
     breaktime,
     volumeControl,
     playSound,
-    stopSound
+    stopSound,
+    rangeSlide
   };
 }

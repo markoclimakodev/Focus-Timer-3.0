@@ -71,6 +71,8 @@ const Events = ({
     sounds.playSound(currentSound);
     sounds.buttonClickSound();
     range.value = 50;
+    sounds.rangeSlide(range);
+
     sounds.volumeControl(range, currentSound);
   });
 
@@ -80,6 +82,8 @@ const Events = ({
     sounds.playSound(currentSound);
     sounds.buttonClickSound();
     range.value = 50;
+    sounds.rangeSlide(range);
+
     sounds.volumeControl(range, currentSound);
   });
 
@@ -89,6 +93,8 @@ const Events = ({
     sounds.playSound(currentSound);
     sounds.buttonClickSound();
     range.value = 50;
+    sounds.rangeSlide(range);
+
     sounds.volumeControl(range, currentSound);
   });
 
@@ -98,6 +104,7 @@ const Events = ({
     sounds.playSound(currentSound);
     sounds.buttonClickSound();
     range.value = 50;
+    sounds.rangeSlide(range);
     sounds.volumeControl(range, currentSound);
   });
 
@@ -108,6 +115,7 @@ const Events = ({
 
   range.addEventListener('change', () => {
     sounds.volumeControl(range, currentSound);
+    sounds.rangeSlide(range);
   });
 };
 
