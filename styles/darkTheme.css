@@ -54,7 +54,7 @@ body.dark .cards.selected img {
 
 
 body.dark input[type='range']::-webkit-slider-thumb {
-  background: var(--button-color-selected);
+  background: var(--cards-color-bg-selected);
 
   transition: background-color 1s ease;
 }
