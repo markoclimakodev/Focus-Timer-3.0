@@ -4,7 +4,7 @@
   --button-lightmode-icon-selected: hsla(240, 31%, 98%, 1);
 
   --button-color-selected: hsla(227, 86%, 53%, 0.7);
-  --cards-color-bg-selected: hsla(227, 85%, 53%, 0.5);
+  --cards-color-bg-selected: hsla(227, 85%, 53%, 1);
   --cards-color-bg-light: hsla(253, 7%, 75%, 0.4);
 
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
@@ -259,7 +259,7 @@ input[type='range']::-webkit-slider-thumb {
   width: 1em;
   border-radius: 50%;
 
-  background: var(--button-color-selected);
+  background: var(--cards-color-bg-selected);
   margin-top: -0.343em;
 }
 
