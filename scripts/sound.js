@@ -86,6 +86,16 @@ export default function Sounds() {
     document.getElementById('rangeValue').innerHTML = range.value;
   };
 
+  const changeVolumeIcon = (range) => {
+    if (range.value == 0) {
+      document.querySelector('.volume-icon').src =
+        'src/images/buttons/volume-mute.svg';
+    } else {
+      document.querySelector('.volume-icon').src =
+        'src/images/buttons/volume.svg';
+    }
+  };
+
   const handleRangeSlide = (range, bolean) => {
     range.disabled = bolean;
   };
@@ -105,5 +115,6 @@ export default function Sounds() {
     stopSound,
     rangeSlide,
     handleRangeSlide,
+    changeVolumeIcon,
   };
 }

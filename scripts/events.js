@@ -121,6 +121,7 @@ const Events = ({
   range.addEventListener('change', () => {
     sounds.volumeControl(range, currentSound);
     sounds.rangeSlide(range);
+    sounds.changeVolumeIcon(range)
   });
 };
 
