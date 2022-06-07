@@ -242,7 +242,7 @@ input[type='range'] {
 
 input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
-  height: 4px;
+  height: 0.275em;
   background: var(--button-lightmode-color);
   border: none;
   border-radius: 0.5em;
@@ -251,12 +251,12 @@ input[type='range']::-webkit-slider-runnable-track {
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;
-  height: 16px;
-  width: 16px;
+  height: 1em;
+  width: 1em;
   border-radius: 50%;
 
   background: var(--button-color-selected);
-  margin-top: -5.5px;
+  margin-top: -0.343em;
 }
 
 input[type='range']:focus {
