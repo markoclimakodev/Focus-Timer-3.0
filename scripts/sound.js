@@ -83,7 +83,7 @@ export default function Sounds() {
   };
 
   const rangeSlide = (range) => {
-    document.getElementById('rangeValue').innerHTML = range.value;
+    document.getElementById('rangeValue').innerHTML = `${range.value}%`;
   };
 
   const changeVolumeIcon = (range) => {
