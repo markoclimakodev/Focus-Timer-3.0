@@ -72,7 +72,7 @@ const Events = ({
     sounds.buttonClickSound();
     range.value = 50;
     sounds.rangeSlide(range);
-
+    sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
   });
 
@@ -83,7 +83,7 @@ const Events = ({
     sounds.buttonClickSound();
     range.value = 50;
     sounds.rangeSlide(range);
-
+    sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
   });
 
@@ -94,7 +94,7 @@ const Events = ({
     sounds.buttonClickSound();
     range.value = 50;
     sounds.rangeSlide(range);
-
+    sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
   });
 
@@ -105,12 +105,17 @@ const Events = ({
     sounds.buttonClickSound();
     range.value = 50;
     sounds.rangeSlide(range);
+    sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
   });
 
   turnOffSound.addEventListener('click', () => {
     controls.soundOff();
     sounds.stopSound();
+    sounds.handleRangeSlide(range,true)
+    range.value = 50
+    sounds.rangeSlide(range);
+
   });
 
   range.addEventListener('change', () => {

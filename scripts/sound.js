@@ -82,9 +82,13 @@ export default function Sounds() {
     }
   };
 
-  const rangeSlide =(range)=> {
+  const rangeSlide = (range) => {
     document.getElementById('rangeValue').innerHTML = range.value;
-}
+  };
+
+  const handleRangeSlide = (range, bolean) => {
+    range.disabled = bolean;
+  };
 
   return {
     buttonClickSound,
@@ -99,6 +103,7 @@ export default function Sounds() {
     volumeControl,
     playSound,
     stopSound,
-    rangeSlide
+    rangeSlide,
+    handleRangeSlide,
   };
 }
