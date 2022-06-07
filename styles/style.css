@@ -1,6 +1,6 @@
 :root {
-  --main-lightmode-bg: hsla(0, 0%, 97%, 0.6);
-  --button-lightmode-color: hsla(248, 2%, 20%, 1);
+  --main-lightmode-bg: hsla(0, 0%, 97%, 0.4);
+  --button-lightmode-color: hsl(240, 7%, 11%);
   --button-lightmode-icon-selected: hsla(240, 31%, 98%, 1);
 
   --button-color-selected: hsla(227, 86%, 53%, 1);
@@ -69,6 +69,7 @@ main {
   gap: 3.3em;
   background-color: var(--main-lightmode-bg);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  backdrop-filter: blur(3px);
   border-radius: 0.5em;
   width: clamp(20em, 100%, 65em);
 
