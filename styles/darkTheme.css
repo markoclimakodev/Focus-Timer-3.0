@@ -31,11 +31,6 @@ body.dark .time-bar {
   transition: all 1s ease;
 }
 
-body.dark .counter,
-body.dark .controls-container {
-  transition: all 1s ease;
-}
-
 body.dark input[type='range'],
 body.dark input[type='range']::-webkit-slider-runnable-track,
 body.dark input[type='range']::-webkit-slider-thumb {
@@ -48,7 +43,7 @@ body.dark .cards {
 }
 
 body.dark .cards.selected {
-  background: var(--cards-color-bg-selected);
+  background: var(--button-color-selected);
   transition: background 1s ease;
 }
 

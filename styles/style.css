@@ -3,14 +3,14 @@
   --button-lightmode-color: hsl(240, 7%, 11%);
   --button-lightmode-icon-selected: hsla(240, 31%, 98%, 1);
 
-  --button-color-selected: hsla(227, 86%, 53%, 1);
+  --button-color-selected: hsla(227, 86%, 53%, 0.7);
   --cards-color-bg-selected: hsla(227, 85%, 53%, 0.5);
-  --cards-color-bg-light: hsla(253, 7%, 75%, 0.7);
+  --cards-color-bg-light: hsla(253, 7%, 75%, 0.4);
 
   --main-darkmode-bg: hsla(0, 0%, 0%, 0.75);
   --button-darkmode-color: rgb(208, 209, 210);
   --button-darkmode-icon-selected: hsla(0, 0%, 0%, 1);
-  --cards-color-bg-dark: #313135b3;
+  --cards-color-bg-dark: hsla(240, 4%, 20%, 0.4);
 }
 
 * {
@@ -298,10 +298,7 @@ input[type='range']:focus::-webkit-slider-runnable-track {
 }
 
 @media (min-width: 900px) {
-  main {
-    margin: 8em auto;
-  }
-
+ 
   .view {
     display: flex;
     position: absolute;
