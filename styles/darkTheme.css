@@ -5,18 +5,20 @@ body.dark {
 }
 
 body.dark .theme-card {
-  filter: drop-shadow(2px 1px 6px #FFE83C);
+  filter: drop-shadow(2px 1px 6px #ffe83c);
 }
 
 body.dark .main-content img {
-  filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%) hue-rotate(175deg) brightness(95%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%)
+    hue-rotate(175deg) brightness(95%) contrast(90%);
 }
 
 body.dark .controls-container img.selected {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%) hue-rotate(221deg) brightness(95%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%)
+    hue-rotate(221deg) brightness(95%) contrast(97%);
 }
 
-body.dark .main-content{
+body.dark .main-content {
   background-color: var(--main-darkmode-bg);
   transition: background-color 1s ease;
 }
@@ -48,13 +50,12 @@ body.dark .cards.selected {
 }
 
 body.dark .cards.selected img {
- filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%) hue-rotate(175deg) brightness(95%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%)
+    hue-rotate(175deg) brightness(95%) contrast(90%);
   transition: fill 1s ease;
 }
 
-
 body.dark input[type='range']::-webkit-slider-thumb {
   background: var(--cards-color-bg-selected);
-
   transition: background-color 1s ease;
 }

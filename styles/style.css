@@ -258,7 +258,6 @@ input[type='range']::-webkit-slider-thumb {
   height: 1em;
   width: 1em;
   border-radius: 50%;
-
   background: var(--cards-color-bg-selected);
   margin-top: -0.343em;
 }
@@ -269,6 +268,10 @@ input[type='range']:focus {
 
 input[type='range']:focus::-webkit-slider-runnable-track {
   background: var(--button-lightmode-color);
+}
+
+input[type='range']:disabled{
+opacity: 0.5;
 }
 
 ::-webkit-scrollbar {
