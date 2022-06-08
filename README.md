@@ -27,20 +27,32 @@
   <h3>Light mode</h3>
   <br>
   <section align="center">
-  <img src="https://i.imgur.com/7vH3aDa.png" width="400">
+  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20light%20mode%201.png" width="400">
   &nbsp;
   &nbsp;
-  <img src="https://i.imgur.com/KsoOYNv.png" width="400">
+  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20light%20mode%202.png" width="400">
+   <br>
+    <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20light%20mode%203.png" width="400">
+  &nbsp;
+  &nbsp;
+  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20light%20mode%204.png" width="400">
   </section>
   <br>
+ &nbsp;
+  &nbsp;
   <h3>Dark mode</h3>
   <br>
  <section align="center">
-  <img src="https://i.imgur.com/eIBIzNd.png" width="400">
+  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20dark%20mode%201.png" width="400">
   &nbsp;
   &nbsp;
-  <img src="https://i.imgur.com/Ywdm9O5.png" width="400">
-</section>
+  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20dark%20mode%203.png" width="400">
+   <br>
+    <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20dark%20mode%202.png" width="400">
+  &nbsp;
+  &nbsp;
+  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20dark%20mode%204.png" width="400">
+  </section>
 </section>
 
 <br>
