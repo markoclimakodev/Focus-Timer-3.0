@@ -1,5 +1,5 @@
 body.dark {
-  background-image: url('../src/images/themes/darkmode/1920×1080.jpg') ;
+  background-image: url('../src/images/themes/darkmode/1920×1080.jpg');
   transition: all 1s ease;
   color: var(--button-darkmode-color);
 }

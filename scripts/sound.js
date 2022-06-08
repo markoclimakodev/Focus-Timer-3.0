@@ -1,5 +1,5 @@
 export default function Sounds() {
-  const clickedSound = new Audio('./src/sounds/clickSound.mp3');
+  const clickedSound = new Audio('./src/sounds/clickSound.wav');
   const timeEnd = new Audio('./src/sounds/timeEnd.mp3');
   const thirtySeconds = new Audio('./src/sounds/thirty-seconds-left.mp3');
   const sessionRoundCompleted = new Audio(
@@ -19,6 +19,7 @@ export default function Sounds() {
 
   const buttonClickSound = () => {
     clickedSound.play();
+    clickedSound.volume = 0.2
   };
 
   const sessionCompleted = () => {

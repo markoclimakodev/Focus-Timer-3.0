@@ -75,7 +75,6 @@ const Events = ({
     sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
     sounds.changeVolumeIcon(range)
-
   });
 
   rainBtn.addEventListener('click', () => {
@@ -88,7 +87,6 @@ const Events = ({
     sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
     sounds.changeVolumeIcon(range)
-
   });
 
   coffeeshopBtn.addEventListener('click', () => {
@@ -101,7 +99,6 @@ const Events = ({
     sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
     sounds.changeVolumeIcon(range)
-
   });
 
   fireBtn.addEventListener('click', () => {
@@ -114,21 +111,20 @@ const Events = ({
     sounds.handleRangeSlide(range,false)
     sounds.volumeControl(range, currentSound);
     sounds.changeVolumeIcon(range)
-
   });
 
   turnOffSound.addEventListener('click', () => {
     controls.soundOff();
     sounds.stopSound();
+    sounds.buttonClickSound();
     sounds.handleRangeSlide(range,true)
     range.value = 0
     sounds.rangeSlide(range);
     sounds.changeVolumeIcon(range)
-
-
   });
 
   range.addEventListener('change', () => {
+    sounds.buttonClickSound();
     sounds.volumeControl(range, currentSound);
     sounds.rangeSlide(range);
     sounds.changeVolumeIcon(range)

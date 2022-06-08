@@ -230,7 +230,7 @@ main {
 }
 
 .slidecontainer img {
- width: 20%;
+  width: 20%;
 }
 
 .slidecontainer span {
@@ -270,8 +270,8 @@ input[type='range']:focus::-webkit-slider-runnable-track {
   background: var(--button-lightmode-color);
 }
 
-input[type='range']:disabled{
-opacity: 0.5;
+input[type='range']:disabled {
+  opacity: 0.5;
 }
 
 ::-webkit-scrollbar {
@@ -301,7 +301,6 @@ opacity: 0.5;
 }
 
 @media (min-width: 900px) {
- 
   .view {
     display: flex;
     position: absolute;
@@ -319,10 +318,8 @@ opacity: 0.5;
   }
   .slidecontainer span {
     transform: rotate(90deg);
-
   }
   .slidecontainer img {
     transform: rotate(90deg);
-
   }
 }
