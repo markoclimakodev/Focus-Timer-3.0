@@ -1,11 +1,11 @@
 body.dark {
-  background-image: url('../src/images/themes/darkmode/1920×1080.jpg');
+  background-image: url('../src/images/themes/darkmode/1920×1080.jpg') ;
   transition: all 1s ease;
   color: var(--button-darkmode-color);
 }
 
 body.dark .theme-card {
-  filter: drop-shadow(2px 1px 6px #ffe83c);
+  filter: drop-shadow(1px 1px 6px #6f00ffd9);
 }
 
 body.dark .main-content img {
