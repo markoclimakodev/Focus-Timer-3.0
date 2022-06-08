@@ -5,7 +5,7 @@ body.dark {
 }
 
 body.dark .theme-card {
-  filter: drop-shadow(1px 1px 6px #6f00ffd9);
+  filter: drop-shadow(1px 1px 6px var(--cards-color-bg-selected));
 }
 
 body.dark .main-content img {
