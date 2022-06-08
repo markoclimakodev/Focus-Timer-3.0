@@ -19,7 +19,7 @@ export default function Sounds() {
 
   const buttonClickSound = () => {
     clickedSound.play();
-    clickedSound.volume = 0.2
+    clickedSound.volume = 0.2;
   };
 
   const sessionCompleted = () => {

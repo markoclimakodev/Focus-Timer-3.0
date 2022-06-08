@@ -11,6 +11,7 @@ export default function Timer({
   let timerTimeout;
   let round = new Boolean(false);
   let session = 1;
+  let teste = 0;
 
   const updateSession = (session) => {
     let currentSession = document.querySelector('.currentSession');
@@ -41,6 +42,13 @@ export default function Timer({
         resetCounter();
         session++;
         updateSession(session - 1);
+        if (teste == 0) {
+          sounds.sessionRoundCompleted.play();
+          teste = 1;
+        } else {
+          teste = 0;
+          sounds.breaktime.play();
+        }
         if (round == false) {
           round = true;
           restTime();
