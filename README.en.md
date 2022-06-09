@@ -1,5 +1,6 @@
 <h1>Focus Timer</h1>
-
+<a href="https://github.com/mkclimako/Focus-Timer-3.0/edit/main/README.md">Clique aqui para ler na versão em português</a>
+<hr>
  
  <a href="#pomodoro">• What is the Pomodoro Technique?</a> <br>
  <a href="#funcionalidades">•  Functionalities</a> <br>
@@ -7,11 +8,13 @@
  <a href="#tecnologias">• Technologies used</a>  <br>
  <a href="#screenshot">• Screenshots</a> <br>
  <a href="#deploy">• Deploy</a><br>
+<hr>
 
 
 
 <p >Focus Timer is a web application based on the Pomodoro Technique that assists in time management for task execution. The Pomodoro Technique is ideal for students and professionals that are having difficulty in maintaining their focus, as well as for those who wish to increase their productivity.
 </p>
+<hr>
 
 <h2 id="pomodoro"> What is the Pomodoro Technique?
 </h2>
@@ -20,6 +23,7 @@
  The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. This technique consists in using a timer to divide the work in periods of focus of 25 minutes each, with brief intervals between them. Its name comes from the Italian word “pomodoro” (tomato), as a reference to a popular tomato-shaped kitchen timer. This method is based on the idea that frequent pauses can increase mental agility. - Wikipedia 
 
 </cite>
+<hr>
 
 <h2 id="funcionalidades">Funcionalidades</h2>
 
@@ -34,6 +38,7 @@
    <li>Progress bar</li>
   <li>Ongoing session marker</li>
 </ul>
+<hr>
 
 <h2 id="comoUsar">How to use Focus Timer?</h2>
 <ul>
@@ -51,6 +56,7 @@
 </li>
  
 </ul>
+<hr>
 
 <h2 id="tecnologias">Technologies used</h2>
 <section>
@@ -62,6 +68,7 @@
   &nbsp;
  <img src=" https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 </section>
+<hr>
 
 <h2 id="screenshot">Screenshots</h2>
 <h3>Light  mode</h3>
@@ -69,10 +76,13 @@
    &nbsp;
  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20light%20mode%202.png">
  &nbsp;
+<hr>
+ 
  <h3>Dark mode</h3>
   <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20dark%20mode%201.png">
    &nbsp;
  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20dark%20mode%202.png">
+<hr>
 
 <h2 id="deploy">Deploy</h2>
 <a href="https://focus-timer-3.vercel.app/" target="_blank">Application link on Vercel</a> 
