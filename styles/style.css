@@ -97,10 +97,13 @@ main {
   border: 0.1em solid var(--button-lightmode-color);
   border-radius: 0.4em;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .fill {
   background-color: #224fee;
+  border: #224fee;
   height: 100%;
   width: 0%;
   border-radius: 0.4em;
@@ -142,7 +145,7 @@ main {
 
 .controls-container img.selected {
   filter: brightness(0) saturate(100%) invert(23%) sepia(79%) saturate(2747%)
-    hue-rotate(221deg) brightness(95%) contrast(97%);
+    hue-rotate(221deg) brightness(95%) contrast(97%) drop-shadow(3px 5px 8px rgb(255, 255, 255));
 }
 
 .controls-container p {
