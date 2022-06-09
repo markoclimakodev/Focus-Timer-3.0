@@ -1,9 +1,20 @@
 <h1>Focus Timer</h1>
-<p>Focus timer é uma aplicação Web baseada na técnica pomodoro que auxilia no gerenciamento de tempo para execução de tarefas.
+
+ 
+ <a href="#pomodoro">• O que é técnica Pomodoro?</a> <br>
+ <a href="#funcionalidades">• Funcionalidades</a> <br>
+ <a href="#comoUsar">• Como usar o Focus Timer?</a> <br>
+ <a href="#tecnologias">• Tecnologias utilizadas</a>  <br>
+ <a href="#screenshot">• Screenshots</a> <br>
+ <a href="#deploy">• Deploy</a><br>
+
+
+
+<p >Focus timer é uma aplicação Web baseada na técnica pomodoro que auxilia no gerenciamento de tempo para execução de tarefas.
 A técnica pomodoro é ideal para estudantes e profissionais que estão tendo dificuldade em manter o foco e para os que desejam aumentar sua produtividade.
 </p>
 
-<h2> O que é técnica Pomodoro?</h2>
+<h2 id="pomodoro"> O que é técnica Pomodoro?</h2>
 
 <cite>
   A Técnica Pomodoro é um método de gerenciamento de tempo desenvolvido por
@@ -15,7 +26,7 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
   agilidade mental. - Wikipedia
 </cite>
 
-<h2>Funcionalidades</h2>
+<h2 id="funcionalidades">Funcionalidades</h2>
 
 <ul>
   <li>Temas claro e escuro</li>
@@ -29,7 +40,7 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
   <li>Número da sessão em andamento</li>
 </ul>
 
-<h2>Como usar o Focus Timer?</h2>
+<h2 id="comoUsar">Como usar o Focus Timer?</h2>
 <ul>
   <li>Escolha a duração da sessão entre as 3 disponíveis (25,45 e 60 minutos). Cada duração tem um tempo de pausa predefinidos de 5, 10 e 15 minutos respectivamente.</li>
   <li>Inicie o temporizador. </li>
@@ -40,7 +51,7 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
  
 </ul>
 
-<h2>Tecnologias utilizadas</h2>
+<h2 id="tecnologias">Tecnologias utilizadas</h2>
 <section>
  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   &nbsp;
@@ -50,3 +61,8 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
   &nbsp;
  <img src=" https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 </section>
+
+<h2 id="screenshot">Screenshots</h2>
+
+
+<h2 id="deploy">Deploy</h2>
