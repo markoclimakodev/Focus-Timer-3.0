@@ -74,6 +74,11 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
  <img src="https://github.com/mkclimako/README-files/blob/main/Focus%20Timer/Screenshot%20dark%20mode%202.png">
 
 <h2 id="deploy">Deploy</h2>
+<a href="https://focus-timer-3.vercel.app/" target="_blank">Link da aplicação na Vercel</a> 
 
-<a href="https://focus-timer-3.vercel.app/" target="_blank">Link da aplicação</a>
+<a href="https://focus-timer-3.vercel.app/" target="_blank">Link da aplicação no Github Pages</a> 
+
+
+
+
 
