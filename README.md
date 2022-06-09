@@ -32,7 +32,6 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
   <li>Escolha a duração da sessão entre as 3 disponíveis</li>
   <li>Inicie o temporizador </li>
   <li>Se preferir escolha um entre os 4 sons ambiente para tocar durante as sessões</li>
-  <li></li>
 </ul>
 
 <h2>Tecnologias</h2>
