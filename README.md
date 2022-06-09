@@ -37,7 +37,7 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
   <li>Controle de volume</li>
   <li>2 opções de layout</li>
    <li>Barra de progresso.</li>
-  <li>Número da sessão em andamento</li>
+  <li>Acompanhe a sessão em andamento</li>
 </ul>
 
 <h2 id="comoUsar">Como usar o Focus Timer?</h2>
