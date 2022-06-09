@@ -23,18 +23,24 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
   <li>3 opções de duração para o seu pomodoro</li>
   <li>Notificação de áudio</li>
   <li>4 sons ambientes</li>
+  <li>Controle de volume</li>
   <li>2 opções de layout</li>
-  <li>Barra de progresso</li>
+   <li>Barra de progresso.</li>
+  <li>Número da sessão em andamento</li>
 </ul>
 
 <h2>Como usar o Focus Timer?</h2>
 <ul>
-  <li>Escolha a duração da sessão entre as 3 disponíveis</li>
-  <li>Inicie o temporizador </li>
-  <li>Se preferir escolha um entre os 4 sons ambiente para tocar durante as sessões</li>
+  <li>Escolha a duração da sessão entre as 3 disponíveis (25,45 e 60 minutos). Cada duração tem um tempo de pausa predefinidos de 5, 10 e 15 minutos respectivamente.</li>
+  <li>Inicie o temporizador. </li>
+  <li>Se preferir, escolha um entre os 4 sons ambientes para tocar durante as sessões.</li>
+  <li>Desative o som ambiente clicando em "sound off" no canto inferior direito.</li>
+   <li>Se desejar, altere o tema clicando nos ícones de lua/sol no canto superior direito da tela.</li>
+  <li> Para alterar o layout, clique no botão "change layout".</li>
+ 
 </ul>
 
-<h2>Tecnologias</h2>
+<h2>Tecnologias utilizadas</h2>
 <section>
  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
   &nbsp;
