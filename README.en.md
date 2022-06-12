@@ -25,7 +25,7 @@
 </cite>
 <hr>
 
-<h2 id="funcionalidades">Funcionalidades</h2>
+<h2 id="funcionalidades">Functionalities</h2>
 
 <ul>
   <li>Light and dark modes</li>
