@@ -47,7 +47,7 @@ body.dark .cards {
 body.dark .cards.selected {
   background: var(--button-color-selected);
   transition: background 1s ease;
-}
+}  
 
 body.dark .cards.selected img {
   filter: brightness(0) saturate(100%) invert(81%) sepia(7%) saturate(138%)

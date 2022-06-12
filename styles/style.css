@@ -46,8 +46,9 @@ body {
   width: 3em;
   border-radius: 0.4em;
   font-size: 1em;
-  filter: drop-shadow(2px 1px 6px #ffff00);
+  filter: drop-shadow(2px 1px 6px rgba(0, 0, 0, 0.519));
   cursor: pointer;
+  opacity: 0.9;
 }
 
 main {
