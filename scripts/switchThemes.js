@@ -5,9 +5,9 @@ const SwitchTheme = ({ body }) => {
 
   const changeThemeName = () => {
     if (body.classList.contains('dark')) {
-      document.querySelector('.switch').src = '../src/images/buttons/sun.svg';
-    } else {
       document.querySelector('.switch').src = '../src/images/buttons/moon.svg';
+    } else {
+      document.querySelector('.switch').src = '../src/images/buttons/sun.svg';
     }
   };
   return {
