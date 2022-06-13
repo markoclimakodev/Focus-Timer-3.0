@@ -82,10 +82,3 @@ A técnica pomodoro é ideal para estudantes e profissionais que estão tendo di
 
 <h2 id="deploy">Deploy</h2>
 <a href="https://focus-timer-3.vercel.app/" target="_blank">Link da aplicação na Vercel</a> 
-
-<a href="https://focus-timer-3.vercel.app/" target="_blank">Link da aplicação no Github Pages</a> 
-
-
-
-
-
